@@ -1,6 +1,6 @@
 ---
 title: --DRAFT-- Web Platform Incubator Community Group Charter
-layout: default
+layout: page
 ---
 
 | Status |
