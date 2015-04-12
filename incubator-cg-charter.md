@@ -11,7 +11,7 @@ layout: page
 # --DRAFT-- Web Platform Incubator Community Group Charter
  * This Charter: http://example.com/incubator-charter.md
  * Start Date: 1 May 2015
- * Last Modified: 8 April 2015
+ * Last Modified: 12 April 2015
  * Status: _(very) unofficial draft_
 
 ## Goals
@@ -62,8 +62,9 @@ _This section comes from the CG template. It may not be the most appropriate tex
 
 Participants in this group choose their Chair(s) and can replace their Chair(s)at any time using whatever means they prefer. However, if 5 participants —no two from the same organization— call for an election, the group must use the following process to replace any current Chair(s) with a new Chair, consulting the Community Development Lead on election operations (e.g., voting infrastructure and using RFC 2777).
 
-1.Participants announce their candidacies. Participants have 14 days to announce their candidacies, but this period ends as soon as all participants have announced their intentions. If there is only one candidate, that person becomes the Chair. If there are two or more candidates, there is a vote. Otherwise, nothing changes.
-2.Participants vote. Participants have 21 days to vote for a single candidate, but this period ends as soon as all participants have voted. The individual who receives the most votes —no two from the same organization— is elected chair. In case of a tie, RFC2777 is used to break the tie. An elected Chair may appoint co-Chairs. 
+  1. Participants announce their candidacies. Participants have 14 days to announce their candidacies, but this period ends as soon as all participants have announced their intentions. If there is only one candidate, that person becomes the Chair. If there are two or more candidates, there is a vote. Otherwise, nothing changes.
+
+  2. Participants vote. Participants have 21 days to vote for a single candidate, but this period ends as soon as all participants have voted. The individual who receives the most votes —no two from the same organization— is elected chair. In case of a tie, RFC2777 is used to break the tie. An elected Chair may appoint co-Chairs. 
 
 Participants dissatisfied with the outcome of an election may ask the Community Development Lead to intervene. The Community Development Lead, after evaluating the election, may take any action including no action. 
 
