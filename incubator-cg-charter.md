@@ -11,17 +11,31 @@ layout: page
 # --DRAFT-- Web Platform Incubator Community Group Charter
  * This Charter: http://example.com/incubator-charter.md
  * Start Date: 1 May 2015
- * Last Modified: 12 April 2015
+ * Last Modified: 13 April 2015
  * Status: _(very) unofficial draft_
 
 ## Goals
 The Web Platform Incubator Community Group (WPI CG) provides a lightweight venue for proposing and discussing new web platform features. Each proposal will be discussed in its own GitHub repository. Membership of the group is open to everybody but all participants will have signed the [W3C Community Contributor License Agreement](https://www.w3.org/community/about/agreements/cla/).
 
-As proposals gain support and become more stable and mature they will be considered for migration to a W3C Working Group where they can be put on the Recommendation track with appropriate status and IP considerations.
+As proposals gain support and become more stable and mature they will be considered for migration to a W3C Working Group where they can be put on the Recommendation track with appropriate status and Intellectual Property (IP) considerations.
+
+Proposal editors will prepare a ["ready for review"](http://w3c.github.io/charter-html/intent-to-standardize.html) assessment, outlining use cases, as well as implementation considerations, security, privacy, accessibility, and internationalisation impacts. It is the role of the Working Group to evaluate such assessment before starting a standardisation effort. 
 
 ## Background
 
-_This section needs text describing why this group should exist and what problems it solves._
+W3C Community Groups provide a convenient structure within which to discuss early standards proposals with a concrete contribution license. While they are relatively simple to create, there is still enough friction in the system that causes some people to start work outside W3C with no formal IP considerations.
+
+The goal of the WPI CG is to balance these two considerations. It should be as low friction as possible to make new proposals where participants make their contributions with known IP commitments.
+
+Over time, the WPI CG will grow to include all the people that have signed up for their contributions to be made according to the [W3C CG CLA](https://www.w3.org/community/about/agreements/cla/), much like an open source project grows a list of contributors making pull requests under the project license.
+
+Different organisations will have different internal policies for managing engagement in the WPI CG. Some will run internal processes before allowing their representatives to engage and make contributions to a particular proposal. Others allow contributions to any proposal according to standing policies. It is up to each organisation to determine how to manage this.
+
+This approach provides the following benefits:
+
+  * Avoids web standards proposals scattered in random personal GitHub repos that have unknown IP status.
+  * Avoids spending months in charter discussions before commencing work in a WG or even the overhead of finding the right people to begin a new Community Group.
+  * Encourages new people (especially web developers) to make proposals without having to first understand how to navigate the role and scope of different W3C Working Groups.
 
 ## Scope of Work
 
@@ -29,13 +43,15 @@ The community group will accept and discuss any proposal for a web platform feat
 
 ## Out of Scope
 
-Features or ideas that don't have applicability in the browser should be proposed to another Community Group.
+Features or ideas that don't have applicability in a browser (or similar user agent) should be proposed to another Community Group.
 
-## Current Projects
+## Current Proposals
 
-The group publishes an [index of the projects](https://example.com/indexpage) worked on in GitHub. Any [prollyfills](https://www.safaribooksonline.com/library/view/building-polyfills/9781449370725/ch07.html) or test suites will be developed in Open Source using the [W3C Software License](http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231).
+The group publishes an [index of the proposals](https://example.com/indexpage) worked on in GitHub. Any [prollyfills](https://www.safaribooksonline.com/library/view/building-polyfills/9781449370725/ch07.html) or test suites will be developed in Open Source using the [W3C Software License](http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231).
 
 New projects or status changes are communicated to the group through the public announcement mailing list (this list will not be used for discussing proposals).
+
+Proposal editors should publish regular status updates to the announcement mailing list (again encouraging discussion in the GitHub repo). This allows  group participants to monitor progress without having to directly watch every repo.
 
 ## Dependencies or Liaisons
 
@@ -60,11 +76,11 @@ The Community Group mailing list must not be used for discussing details of spec
 
 _This section comes from the CG template. It may not be the most appropriate text but is left as a starting point for discussion._
 
-Participants in this group choose their Chair(s) and can replace their Chair(s)at any time using whatever means they prefer. However, if 5 participants —no two from the same organization— call for an election, the group must use the following process to replace any current Chair(s) with a new Chair, consulting the Community Development Lead on election operations (e.g., voting infrastructure and using RFC 2777).
+Participants in this group choose their Chair(s) and can replace their Chair(s)at any time using whatever means they prefer. However, if 5 participants —no two from the same organisation— call for an election, the group must use the following process to replace any current Chair(s) with a new Chair, consulting the Community Development Lead on election operations (e.g., voting infrastructure and using RFC 2777).
 
   1. Participants announce their candidacies. Participants have 14 days to announce their candidacies, but this period ends as soon as all participants have announced their intentions. If there is only one candidate, that person becomes the Chair. If there are two or more candidates, there is a vote. Otherwise, nothing changes.
 
-  2. Participants vote. Participants have 21 days to vote for a single candidate, but this period ends as soon as all participants have voted. The individual who receives the most votes —no two from the same organization— is elected chair. In case of a tie, RFC2777 is used to break the tie. An elected Chair may appoint co-Chairs. 
+  2. Participants vote. Participants have 21 days to vote for a single candidate, but this period ends as soon as all participants have voted. The individual who receives the most votes —no two from the same organisation— is elected chair. In case of a tie, RFC2777 is used to break the tie. An elected Chair may appoint co-Chairs. 
 
 Participants dissatisfied with the outcome of an election may ask the Community Development Lead to intervene. The Community Development Lead, after evaluating the election, may take any action including no action. 
 
