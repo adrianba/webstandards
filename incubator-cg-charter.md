@@ -15,7 +15,13 @@ layout: page
  * Status: _(very) unofficial draft_
 
 ## Goals
-The Web Platform Incubator Community Group (WPI CG) provides a lightweight venue for proposing and discussing new web platform features. Each proposal will be discussed in its own GitHub repository. Membership of the group is open to everybody but all participants will have signed the [W3C Community Contributor License Agreement](https://www.w3.org/community/about/agreements/cla/).
+The Web Platform Incubator Community Group (WPI CG) has among its high-level goals the following:
+
+  * Avoid web-standards proposals being scattered across random personal GitHub repos that have unknown IP status.
+  * Avoid spending months in charter discussions before commencing work in a WG—or avoid even the overhead of finding the right people to begin a new Community Group.
+  * Encourage new people (especially web developers) to make proposals without having to first understand how to navigate the role and scope of different W3C Working Groups.
+
+The Web Platform Incubator Community Group facilitates those goals by providing a lightweight venue for proposing and discussing new web platform features. Each proposal will be discussed in its own GitHub repository. Membership of the group is open to everybody but all participants will have signed the [W3C Community Contributor License Agreement](https://www.w3.org/community/about/agreements/cla/).
 
 As proposals gain support and become more stable and mature they will be considered for migration to a W3C Working Group where they can be put on the Recommendation track with appropriate status and Intellectual Property (IP) considerations.
 
@@ -30,12 +36,6 @@ The goal of the WPI CG is to balance these two considerations. It should be as l
 Over time, the WPI CG will grow to include all the people that have signed up for their contributions to be made according to the [W3C CG CLA](https://www.w3.org/community/about/agreements/cla/), much like an open source project grows a list of contributors making pull requests under the project license.
 
 Different organisations will have different internal policies for managing engagement in the WPI CG. Some will run internal processes before allowing their representatives to engage and make contributions to a particular proposal. Others allow contributions to any proposal according to standing policies. It is up to each organisation to determine how to manage this.
-
-This approach provides the following benefits:
-
-  * Avoids web standards proposals scattered in random personal GitHub repos that have unknown IP status.
-  * Avoids spending months in charter discussions before commencing work in a WG or even the overhead of finding the right people to begin a new Community Group.
-  * Encourages new people (especially web developers) to make proposals without having to first understand how to navigate the role and scope of different W3C Working Groups.
 
 ## Scope of Work
 
