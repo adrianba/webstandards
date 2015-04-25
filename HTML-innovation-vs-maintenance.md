@@ -71,4 +71,4 @@ The list of deliverables in WebApps is huge and varied. Perhaps we should ration
   * **Web Components** – Shadow DOM, Custom Elements, HTML Imports, data binding, etc.
   * **Media** – EME, MSE, transcript, track binding, etc.
 
-This would be quite disruptive but I just want to start the discussion with out assuming that the only plan should be to recharter HTML. This is a rough proposal I came up with in a few minutes. I'm sure there are other better alternatives.
+This would be quite disruptive but I just want to start the discussion without assuming that the only plan should be to recharter HTML. This is a rough proposal I came up with in a few minutes. I'm sure there are other better alternatives.
