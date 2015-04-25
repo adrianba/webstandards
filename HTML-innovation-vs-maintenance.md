@@ -22,13 +22,13 @@ The three highest priority issues that we want to solve are:
 
 ### Incubating new ideas
 
-How to incubate new ideas with the lowest friction possible while we figure out if they are good ideas and if they have support from the broader community. We want to have these discussions with a well understood contribution license so that we can take the good ideas forward onto the Recommendation track.
+We want to incubate new ideas with the lowest friction possible while we figure out if they are good ideas and if they have support from the broader community. We want to have these discussions with a well understood contribution license so that we can take the good ideas forward onto the Recommendation track.
 
 There appears to be strong consensus for the creation of the Web Platform Incubator Community Group to address this issue for new features. We have a few process issues to resolve but we are in good shape here.
 
 ### Making faster progress on stabilising specifications
 
-How to make faster progress on getting standards stabilised and to Recommendation status. Today we have many specifications languishing in LC/CR stage because we have some tests in a test suite for which we don’t have two passes. This isn’t preventing web developers from using the features but it is blocking progress on specifications.
+We want to make faster progress on getting standards stabilised and to Recommendation status. Today we have many specifications languishing in LC/CR stage because we have some tests in a test suite for which we don’t have two passes. This isn’t preventing web developers from using the features but it is blocking progress on specifications.
 
 We clearly need to get the balance right here. We don’t want to standardise something where the specification isn’t complete enough to accomplish interoperability. We do not want to postpone interoperability on new features until we see problems in the field. On the other hand, if multiple browsers have broadly implemented these features and they are in use on many web sites without a large number of reported problems then we shouldn’t block progress of the specification.
 
@@ -56,6 +56,7 @@ At TPAC 2014, I heard overwhelming support for modularisation of HTML moving ahe
 
 ## To recharter a HTML Working Group or not?
 
+The argument that I have heard for rechartering the HTML Working Group goes as follows: HTML is a fundamental part of the web platform. We all agree that HTML is not “done”. We need somewhere to do maintenance of HTML 5.0. In our discussions we heard some ways in which we might extend HTML. Philippe has collected [other ideas in his HTML Plan](http://w3c.github.io/charter-html/html-plan.html#directions). It seems logical therefore to charter the HTML Working Group to own this maintenance and to host this new work on HTML.
 
 One problem I see is that there is a difference between a set of things that people **could** work on and the set of things that are in a high enough priority that they **will** work on them in the next 12 months. At Microsoft we don’t have a long list of features we want to add to HTML in the next year.
 
@@ -73,4 +74,3 @@ The list of deliverables in WebApps is huge and varied. Perhaps we should ration
   * **Media** – EME, MSE, transcript, track binding, etc.
 
 This would be quite disruptive but I just want to start the discussion with out assuming that the only plan should be to recharter HTML. This is a rough proposal I came up with in a few minutes. I'm sure there are other better alternatives.
-
