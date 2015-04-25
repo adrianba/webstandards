@@ -3,8 +3,6 @@ title: Following up on HTML innovation vs maintenance
 layout: page
 ---
 
-I think there is some misunderstanding about what problems we’re trying to solve from the recent discussions between the browser engine vendors and W3C.
-
 ## The future of HTML
 
 W3C is the natural custodian for HTML. We need to come together as a community as W3C participants to decide how we will manage, maintain, and develop HTML in the coming years. In the last few years, the HTML Working Group has focused almost solely on completing HTML 5.0 and publishing a Recommendation. At the same time the amount of new technical work in the group has diminished. The level of engagement, especially from browser vendors who write much of the software that exposes the capabilities of HTML, has fallen to a very low level.
