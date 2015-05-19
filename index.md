@@ -3,4 +3,5 @@ title: Web Standards
 layout: default
 ---
 
-### Web Standards
+### Notes about Web Standards
+
