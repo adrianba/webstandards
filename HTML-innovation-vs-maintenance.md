@@ -1,6 +1,6 @@
 ---
 title: Following up on HTML innovation vs maintenance
-layout: page
+layout: forkable-page
 ---
 
 ## The future of HTML
