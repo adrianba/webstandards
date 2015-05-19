@@ -8,3 +8,5 @@ layout: default
 Incubator Community Group - [draft charter](incubator-cg-charter) ([GitHub](https://github.com/adrianba/webstandards/blob/gh-pages/incubator-cg-charter.md))
 
 The Future of HTML - [thoughts](HTML-innovation-vs-maintenance) ([GitHub](https://github.com/adrianba/webstandards/blob/gh-pages/HTML-innovation-vs-maintenance.md))
+
+[Issues](https://github.com/adrianba/webstandards/issues)
