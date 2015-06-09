@@ -1,0 +1,10062 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.4/css/bootstrap.min.css">
+<style>
+body { margin: 10px; }
+.bg-warning { padding:6px; }
+</style>
+</head>
+<body>
+
+<h1>Review of current <a href="http://tinyurl.com/poflhea">HTML5 bugs</a> as of 9 June 2015</h1>
+
+<p class="bg-warning">WARNING: This is a rough review from one engineer on the Microsoft Edge team to give an initial indication of prioritisation. It does not represent a precise "Microsoft position". There may be some mistakes. There are almost certainly some items where we will change our position after more review. The goal is a first pass to understand the nature of the bugs currently open and their relative magnitude.</p>
+
+<h2>Bug Type</h2>
+<table class="table table-bordered">
+  <tr><td>Bug</td><td>This is a bug in the spec.</td></tr>
+  <tr><td>Editorial</td><td>This is an editorial change that doesn't change implementations.</td></tr>
+  <tr><td>Minor new</td><td>This is a "bug sized" new feature / small extension to existing feature.</td></tr>
+  <tr><td>Feature</td><td>This is a feature request.</td></tr>
+</table>
+
+<h2>Priority</h2>
+
+<p>For bugs with Bug Type = "Bug", the following priorities are assigned:</p>
+<table class="table table-bordered">
+  <tr><td>P0</td><td>High priority - affecting live sites today.</td></tr>
+  <tr><td>P1</td><td>Medium priority - interop issue affecting different browsers and likely to be impacting web developers.</td></tr>
+  <tr><td>P2</td><td>Low priority - should probably be fixed but not a priority for Microsoft.</td></tr>
+  <tr><td>P3</td><td>Recommend resolve with no further action.</td></tr>
+</table>
+<p>We consider the types of bugs designated P0 and P1 bugs to be the kind of maintenance activity we envisage working on in the short term.</p>
+<p>For other bugs, the priority value is simply a guess at the relative priority.</p>
+
+<h1>Bugs</h1>
+<table class="table table-striped table-bordered table-hover">
+ <tr>
+  <th>
+  <p><b><span>ID</span></b></p>
+  </th>
+  <th>
+  <p><b><span>Assigned to</span></b></p>
+  </th>
+  <th>
+  <p><b><span>Reported by</span></b></p>
+  </th>
+  <th>
+  <p><b><span>Status</span></b></p>
+  </th>
+  <th>
+  <p><b><span>Summary</span></b></p>
+  </th>
+  <th>
+  <p><b><span>Opened date</span></b></p>
+  </th>
+  <th>
+  <p><b><span>Changed date</span></b></p>
+  </th>
+  <th>
+  <p><b><span>Bug Type</span></b></p>
+  </th>
+  <th>
+  <p><b><span>Priority</span></b></p>
+  </th>
+  <th>
+  <p><b><span>Notes</span></b></p>
+  </th>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=25407">25407</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  travil 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=25407">To improve
+  interop, allow &lt;meta&gt; refresh content attribute to have
+  &quot;url=&quot; part optional </a>
+  </td>
+  <td>
+  4/21/2014
+  </td>
+  <td>
+  4/21/2014
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P0
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26424">26424</a>
+  </td>
+  <td>
+  robin 
+  </td>
+  <td>
+  kojiishi 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26424">Tag omission
+  rules for rp could break invalid-but-existing content </a>
+  </td>
+  <td>
+  7/24/2014
+  </td>
+  <td>
+  8/11/2014
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P0
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26426">26426</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  kojiishi 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26426">rb causing a
+  parser error if current node is not ruby could break old content </a>
+  </td>
+  <td>
+  7/24/2014
+  </td>
+  <td>
+  9/1/2014
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P0
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=28212">28212</a>
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  arai.unmht 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=28212">Making an element
+  with tabindex attribute to be an interactive content breaks backward
+  compatibility </a>
+  </td>
+  <td>
+  3/13/2015
+  </td>
+  <td>
+  3/14/2015
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P0
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=17773">17773</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  contributor 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=17773">Drag-and-drop /
+  undo manager interaction </a>
+  </td>
+  <td>
+  7/13/2012
+  </td>
+  <td>
+  7/13/2012
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P1
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=17784">17784</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  pomax 
+  </td>
+  <td>
+  ASSI 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=17784">request: even/odd
+  winding algorithm in addition to non-zero </a>
+  </td>
+  <td>
+  7/15/2012
+  </td>
+  <td>
+  1/21/2013
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P1
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=18135">18135</a>
+  </td>
+  <td>
+  robin 
+  </td>
+  <td>
+  contributor 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=18135">multipart/form-data:
+  field name encoding is not specified; browsers do incompatible things </a>
+  </td>
+  <td>
+  7/18/2012
+  </td>
+  <td>
+  9/14/2012
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P1
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=18263">18263</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  contributor 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=18263">Should ordered
+  list numbering consider list items in child blocks? </a>
+  </td>
+  <td>
+  7/18/2012
+  </td>
+  <td>
+  2/8/2013
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P1
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=18396">18396</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  xn--mlform-iua 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=18396">Encoding Sniffing
+  Algorithm: Add an XML check as a step zero </a>
+  </td>
+  <td>
+  7/25/2012
+  </td>
+  <td>
+  2/8/2013
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P1
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=18542">18542</a>
+  </td>
+  <td>
+  travil 
+  </td>
+  <td>
+  masayuki 
+  </td>
+  <td>
+  REOP 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=18542">onmousewheel
+  attribute should be replaced with onwheel </a>
+  </td>
+  <td>
+  8/13/2012
+  </td>
+  <td>
+  8/20/2013
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P1
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=22328">22328</a>
+  </td>
+  <td>
+  travil 
+  </td>
+  <td>
+  travil 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=22328">HTMLAllCollection.namedItem
+  doesn't match reality </a>
+  </td>
+  <td>
+  6/11/2013
+  </td>
+  <td>
+  7/20/2013
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P1
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24952">24952</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  travil 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24952">input[type=search]
+  needs a tweak to the UA stylesheet recommendation </a>
+  </td>
+  <td>
+  3/5/2014
+  </td>
+  <td>
+  3/5/2014
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P1
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=25877">25877</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  travil 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=25877">focusin and
+  focusout should be included in the &quot;focus update steps&quot; </a>
+  </td>
+  <td>
+  5/23/2014
+  </td>
+  <td>
+  5/27/2014
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P1
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26658">26658</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  travil 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26658">window.parent
+  needs [Replaceable] to match interop + browsers </a>
+  </td>
+  <td>
+  8/25/2014
+  </td>
+  <td>
+  8/26/2014
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P1
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26725">26725</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  travil 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26725">make
+  element.focus() consider body element's focusable state for improved
+  real-world interop </a>
+  </td>
+  <td>
+  9/3/2014
+  </td>
+  <td>
+  9/3/2014
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P1
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27099">27099</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  stephen.cunliffe 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27099">The
+  &quot;everyone wants&quot; colspan=&quot;0&quot; option for TD elements was
+  dropped, yet the &quot;no one uses&quot; rowspan=&quot;0&quot; remains? </a>
+  </td>
+  <td>
+  10/18/2014
+  </td>
+  <td>
+  10/18/2014
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P1
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27232">27232</a>
+  </td>
+  <td>
+  robin 
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27232">udpate h1-h6
+  mapping from no role to heading role </a>
+  </td>
+  <td>
+  11/4/2014
+  </td>
+  <td>
+  11/4/2014
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P1
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27432">27432</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  jwatt 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27432">The current
+  [WHATWG] spec text for &lt;input type=number&gt; stepping can cause stepping
+  in the opposite direction to the one requested </a>
+  </td>
+  <td>
+  11/25/2014
+  </td>
+  <td>
+  11/25/2014
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P1
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27826">27826</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  jdsmith 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27826">Media Element
+  currentTime setting with no src defined </a>
+  </td>
+  <td>
+  1/14/2015
+  </td>
+  <td>
+  1/14/2015
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P1
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=28148">28148</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  travil 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=28148">Improve parsing
+  of numbers for coords attribute </a>
+  </td>
+  <td>
+  3/5/2015
+  </td>
+  <td>
+  3/30/2015
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P1
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=28326">28326</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  travil 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=28326">Remove isindex
+  parsing logic </a>
+  </td>
+  <td>
+  3/24/2015
+  </td>
+  <td>
+  3/25/2015
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P1
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=15428">15428</a>
+  </td>
+  <td>
+  robin 
+  </td>
+  <td>
+  mounir 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=15428">:read-write
+  should always apply to input elements if @readonly doesn't apply </a>
+  </td>
+  <td>
+  1/5/2012
+  </td>
+  <td>
+  2/18/2013
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P2
+  </td>
+  <td>
+  Might be better handled in
+  CSS4 UI
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=16842">16842</a>
+  </td>
+  <td>
+  robin 
+  </td>
+  <td>
+  Ms2ger 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=16842">Spec img.x/y </a>
+  </td>
+  <td>
+  4/24/2012
+  </td>
+  <td>
+  3/11/2013
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=18093">18093</a>
+  </td>
+  <td>
+  robin 
+  </td>
+  <td>
+  contributor 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=18093">progress and
+  meter have no name-attribute? So their value is not POST or GET when the form
+  is submitted? If not, this means an addition alement must be used to convey
+  these values if needed. </a>
+  </td>
+  <td>
+  7/18/2012
+  </td>
+  <td>
+  9/14/2012
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=18298">18298</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  contributor 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=18298">&quot;The script
+  element gets inserted into a document.&quot; - is the order defined if multiple
+  script elements are simultaneously inserted? What about the relative order of
+  other things that happen on insertion and script elements? </a>
+  </td>
+  <td>
+  7/18/2012
+  </td>
+  <td>
+  2/8/2013
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=18490">18490</a>
+  </td>
+  <td>
+  erika.doyle 
+  </td>
+  <td>
+  amir.aharoni 
+  </td>
+  <td>
+  ASSI 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=18490">make any element
+  with an explicit lang or dir attribute bidi-isolated by default </a>
+  </td>
+  <td>
+  8/5/2012
+  </td>
+  <td>
+  10/11/2013
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=18975">18975</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  lmm 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=18975">registerContentHandler
+  and registerProtocolHandler open huge security and privacy holes </a>
+  </td>
+  <td>
+  9/22/2012
+  </td>
+  <td>
+  8/16/2013
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=19994">19994</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  mathieu 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=19994">Should 'The
+  indicated part of the document' be calculated only when the hashtag change? </a>
+  </td>
+  <td>
+  11/17/2012
+  </td>
+  <td>
+  11/17/2012
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=20063">20063</a>
+  </td>
+  <td>
+  silviapfeiffer1 
+  </td>
+  <td>
+  graouts 
+  </td>
+  <td>
+  REOP 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=20063">Unclear whether a
+  &lt;track&gt; element's load event should fired if appended to a
+  &lt;video&gt; with no &quot;src&quot; attribute </a>
+  </td>
+  <td>
+  11/23/2012
+  </td>
+  <td>
+  1/7/2013
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=20400">20400</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  w3 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=20400">datalist Spec
+  Oversight Limits Usefulness </a>
+  </td>
+  <td>
+  12/15/2012
+  </td>
+  <td>
+  1/7/2013
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=20677">20677</a>
+  </td>
+  <td>
+  robin 
+  </td>
+  <td>
+  francois.remy.dev 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=20677">Unable to detect
+  whether a file is in cache or not </a>
+  </td>
+  <td>
+  1/15/2013
+  </td>
+  <td>
+  6/11/2013
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=20769">20769</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  davidc 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=20769">Defining Entity
+  references for characters in XHTML. </a>
+  </td>
+  <td>
+  1/25/2013
+  </td>
+  <td>
+  2/5/2013
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=22245">22245</a>
+  </td>
+  <td>
+  robin 
+  </td>
+  <td>
+  robin 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=22245">Requirements
+  unclear for &quot;other&quot; metadata names </a>
+  </td>
+  <td>
+  6/3/2013
+  </td>
+  <td>
+  6/11/2013
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=22439">22439</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  rafaelw 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=22439">[HTML Parsing] I
+  think the foster parenting prose is now a bit confused (and possibly wrong) </a>
+  </td>
+  <td>
+  6/25/2013
+  </td>
+  <td>
+  6/25/2013
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=22467">22467</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  felipe 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=22467">&lt;select&gt;
+  should have “oninput” </a>
+  </td>
+  <td>
+  6/25/2013
+  </td>
+  <td>
+  3/18/2014
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=22470">22470</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  torleifw 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=22470">Meta name and
+  content attribute </a>
+  </td>
+  <td>
+  6/26/2013
+  </td>
+  <td>
+  6/26/2013
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=22482">22482</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  rafaelw 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=22482">[HTML Parsing]
+  The template element should probably get a general scope marker (not just a
+  table scope marker) </a>
+  </td>
+  <td>
+  6/26/2013
+  </td>
+  <td>
+  6/27/2013
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=22486">22486</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  rafaelw 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=22486">[HTML Template
+  Element] Should we just remove support for &lt;frameset&gt;/&lt;frame&gt; </a>
+  </td>
+  <td>
+  6/26/2013
+  </td>
+  <td>
+  6/27/2013
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=22501">22501</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  rafaelw 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=22501">[HTML Parsing]
+  'Template Contents' mode should include all metadata elements are deferring
+  to 'in head' </a>
+  </td>
+  <td>
+  6/27/2013
+  </td>
+  <td>
+  6/27/2013
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=22719">22719</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  addison 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=22719">I18N-ISSUE-129:
+  document unclear on why content language pragma processing not equivalent to
+  HTTP Content-Language? </a>
+  </td>
+  <td>
+  7/18/2013
+  </td>
+  <td>
+  1/23/2014
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=22835">22835</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  w3-bugs 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=22835">window.navigator.language
+  should not return &quot;en&quot; for privacy protection </a>
+  </td>
+  <td>
+  7/30/2013
+  </td>
+  <td>
+  9/3/2013
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23172">23172</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  eiennohito 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23172">inputmode
+  attribute focuses on latin, but ignore other non-composed scripts </a>
+  </td>
+  <td>
+  9/6/2013
+  </td>
+  <td>
+  12/10/2013
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23561">23561</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  giorgio.liscio 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23561">more tags should
+  be allowed inside &lt;label&gt; </a>
+  </td>
+  <td>
+  10/18/2013
+  </td>
+  <td>
+  10/18/2013
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23562">23562</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  jukka.k.korpela 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23562">”Quality level”
+  for image/jpeg needs to be defined </a>
+  </td>
+  <td>
+  10/18/2013
+  </td>
+  <td>
+  10/18/2013
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23579">23579</a>
+  </td>
+  <td>
+  robin 
+  </td>
+  <td>
+  jukka.k.korpela 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23579">Remove the
+  relList IDL attribute </a>
+  </td>
+  <td>
+  10/21/2013
+  </td>
+  <td>
+  10/22/2013
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23739">23739</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  xn--mlform-iua 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23739">XHTML5: Consider
+  adding ”-//W3C//ENTITIES HTML MathML Set//EN//XML” to list of supported
+  public identifiers </a>
+  </td>
+  <td>
+  11/6/2013
+  </td>
+  <td>
+  11/6/2013
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24190">24190</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  glenn 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24190">Enumeration types
+  should not contain &quot;Enum&quot; (CanPlayTypeEnum) </a>
+  </td>
+  <td>
+  1/2/2014
+  </td>
+  <td>
+  1/2/2014
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24192">24192</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  glenn 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24192">External
+  interface violates member naming conventions </a>
+  </td>
+  <td>
+  1/2/2014
+  </td>
+  <td>
+  1/2/2014
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24471">24471</a>
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  ASSI 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24471">caption element
+  currently takes any role - does not make sense </a>
+  </td>
+  <td>
+  2/2/2014
+  </td>
+  <td>
+  2/2/2014
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24571">24571</a>
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  cyns 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24571">document parsing
+  should discuss setting up accessibility APIs </a>
+  </td>
+  <td>
+  2/7/2014
+  </td>
+  <td>
+  5/12/2014
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24733">24733</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  kornstaedt 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24733">Nested browsing
+  contexts shouldn't be script-closable </a>
+  </td>
+  <td>
+  2/19/2014
+  </td>
+  <td>
+  2/19/2014
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24853">24853</a>
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  netmosfera 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24853">allow nested
+  &lt;header&gt; tags </a>
+  </td>
+  <td>
+  2/28/2014
+  </td>
+  <td>
+  5/12/2014
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24949">24949</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  travil 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24949">Should 'change'
+  fire for programmatic changes? </a>
+  </td>
+  <td>
+  3/5/2014
+  </td>
+  <td>
+  3/6/2014
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24972">24972</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  master.skywalker.88 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24972">menuitem as void
+  element </a>
+  </td>
+  <td>
+  3/7/2014
+  </td>
+  <td>
+  4/24/2014
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=25140">25140</a>
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=25140">restrict summary
+  element content? </a>
+  </td>
+  <td>
+  3/24/2014
+  </td>
+  <td>
+  5/12/2014
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=25273">25273</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  evertvandansen 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=25273">Make datetime
+  formats unambiguous </a>
+  </td>
+  <td>
+  4/5/2014
+  </td>
+  <td>
+  4/5/2014
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26119">26119</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  ssheehan 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26119">An upper limit to
+  the length of a year should be specified. </a>
+  </td>
+  <td>
+  6/17/2014
+  </td>
+  <td>
+  6/30/2014
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26120">26120</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  ssheehan 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26120">Date/Month/Week
+  inputs with non-integer step </a>
+  </td>
+  <td>
+  6/17/2014
+  </td>
+  <td>
+  6/17/2014
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26229">26229</a>
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  aurelien.levy 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26229">role presentation
+  on img element with alt=&quot;&quot; in HTML5 spec VS WAI-ARIA in HTML
+  document </a>
+  </td>
+  <td>
+  6/28/2014
+  </td>
+  <td>
+  7/9/2014
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26720">26720</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  travil 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26720">Make scrollable
+  regions focusable so that they can be keyboard accessible </a>
+  </td>
+  <td>
+  9/2/2014
+  </td>
+  <td>
+  9/2/2014
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27076">27076</a>
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  mzehe 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27076">Change tabIndex
+  spec to only declare 0 and -1 as valid values </a>
+  </td>
+  <td>
+  10/16/2014
+  </td>
+  <td>
+  10/23/2014
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27116">27116</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  john 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27116">&lt;track&gt;
+  element is used for more than just &quot;explicit external timed text
+  tracks&quot; </a>
+  </td>
+  <td>
+  10/20/2014
+  </td>
+  <td>
+  11/12/2014
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27249">27249</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  karan 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27249">Correct the “All
+  or Nothing” Approach Currently Implemented For HTMLMediaElement / MSE </a>
+  </td>
+  <td>
+  11/5/2014
+  </td>
+  <td>
+  11/14/2014
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27253">27253</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  eggert 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27253">Confusions
+  involving Universal Time and old time stamps </a>
+  </td>
+  <td>
+  11/5/2014
+  </td>
+  <td>
+  11/5/2014
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27756">27756</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  mail 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27756">object element
+  usemap should be deprecated </a>
+  </td>
+  <td>
+  1/5/2015
+  </td>
+  <td>
+  1/5/2015
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27904">27904</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  netmosfera 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27904">normalize
+  behavior of select options' .defaultSelected, and add .defaultValue </a>
+  </td>
+  <td>
+  1/27/2015
+  </td>
+  <td>
+  1/27/2015
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27955">27955</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  charlie651 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27955">share an
+  immutable object between threads </a>
+  </td>
+  <td>
+  2/4/2015
+  </td>
+  <td>
+  2/5/2015
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=28171">28171</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  master.skywalker.88 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=28171">Developer-view
+  styles </a>
+  </td>
+  <td>
+  3/8/2015
+  </td>
+  <td>
+  3/8/2015
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=28402">28402</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  mounir 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=28402">More aggressive
+  sanitizing input value policy </a>
+  </td>
+  <td>
+  4/3/2015
+  </td>
+  <td>
+  4/3/2015
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=28616">28616</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  igrigorik 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=28616">Feature testing
+  for &lt;link rel&gt; </a>
+  </td>
+  <td>
+  5/7/2015
+  </td>
+  <td>
+  5/7/2015
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P2
+  </td>
+  <td>
+  This is testing related not
+  spec related
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=28700">28700</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  arai.unmht 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=28700">Labeled element
+  should not match :hover or :active when the label's activation behavior is
+  &quot;do nothing&quot; </a>
+  </td>
+  <td>
+  5/26/2015
+  </td>
+  <td>
+  5/26/2015
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=28702">28702</a>
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  sailesh.panchang 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=28702">Question -
+  validity of situation when using &quot;hidden&quot; is not appropriate </a>
+  </td>
+  <td>
+  5/26/2015
+  </td>
+  <td>
+  5/26/2015
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=28708">28708</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  arai.unmht 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=28708">&quot;a&quot;
+  element without href attribute shouldn't be classified as interactive content
+  </a>
+  </td>
+  <td>
+  5/28/2015
+  </td>
+  <td>
+  5/28/2015
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=17298">17298</a>
+  </td>
+  <td>
+  robin 
+  </td>
+  <td>
+  julian.reschke 
+  </td>
+  <td>
+  REOP 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=17298">valid character
+  range for identifiers too broad </a>
+  </td>
+  <td>
+  6/3/2012
+  </td>
+  <td>
+  9/6/2012
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P3
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=20767">20767</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  kosmo.zb 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=20767">Restrict
+  &quot;Encoding declaration state&quot; to only media types with provided
+  charset parameter </a>
+  </td>
+  <td>
+  1/25/2013
+  </td>
+  <td>
+  2/22/2013
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P3
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23427">23427</a>
+  </td>
+  <td>
+  eoconnor 
+  </td>
+  <td>
+  ben 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23427">Dialog element
+  method names need to be aligned better. </a>
+  </td>
+  <td>
+  10/2/2013
+  </td>
+  <td>
+  10/2/2013
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P3
+  </td>
+  <td>
+  I think its too late to
+  change the names
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24591">24591</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  mike 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24591">Make W3C HTML5
+  spec clearly and correctly state that table@border is obsolete &amp; invalid
+  (nonconforming) </a>
+  </td>
+  <td>
+  2/10/2014
+  </td>
+  <td>
+  2/28/2014
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P3
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24678">24678</a>
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24678">is this reflected
+  by data? </a>
+  </td>
+  <td>
+  2/15/2014
+  </td>
+  <td>
+  2/25/2014
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P3
+  </td>
+  <td>
+  related to 24591 and 24679
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26597">26597</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  gary.evans84 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26597">XHTML media-type
+  compatibility </a>
+  </td>
+  <td>
+  8/18/2014
+  </td>
+  <td>
+  8/19/2014
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P3
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=28230">28230</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  justinhofmann14 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=28230">KEINE AHNUNG GEHT
+  NICHT </a>
+  </td>
+  <td>
+  3/16/2015
+  </td>
+  <td>
+  3/16/2015
+  </td>
+  <td>
+  Bug
+  </td>
+  <td>
+  P3
+  </td>
+  <td>
+  Invalid
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=18152">18152</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  contributor 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=18152">Setting location
+  before the page is done loading shouldn't always be a replace load </a>
+  </td>
+  <td>
+  7/18/2012
+  </td>
+  <td>
+  7/18/2012
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P1
+  </td>
+  <td>
+  Might be interop issues
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=18172">18172</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  contributor 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=18172">Please clarify
+  how seamless should interact with scrollbars </a>
+  </td>
+  <td>
+  7/18/2012
+  </td>
+  <td>
+  7/18/2012
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P1
+  </td>
+  <td>
+  Might be interop issues
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=21403">21403</a>
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  jcraig 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=21403">HTML 5 spec
+  should address how alt text is copied to a plain text pasteboard </a>
+  </td>
+  <td>
+  3/26/2013
+  </td>
+  <td>
+  5/28/2013
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P1
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=25234">25234</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  xn--mlform-iua 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=25234">HTML email should
+  be rendered in no-quirks mode even if DOCTYPE is omitted or quirky </a>
+  </td>
+  <td>
+  4/2/2014
+  </td>
+  <td>
+  4/2/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P1
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27912">27912</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  mail 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27912">initial focus
+  precedence: autofocus or fragment identifier </a>
+  </td>
+  <td>
+  1/27/2015
+  </td>
+  <td>
+  1/27/2015
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P1
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=11004">11004</a>
+  </td>
+  <td>
+  eoconnor 
+  </td>
+  <td>
+  bhawkeslewis 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=11004">Add an example of
+  suggestion labels being used and rendered for input type=&quot;range&quot; </a>
+  </td>
+  <td>
+  10/10/2010
+  </td>
+  <td>
+  1/21/2013
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=11221">11221</a>
+  </td>
+  <td>
+  travil 
+  </td>
+  <td>
+  pantalaimon176 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=11221">Contradiction
+  regarding isindex (the special form input field) </a>
+  </td>
+  <td>
+  11/4/2010
+  </td>
+  <td>
+  3/8/2013
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=13103">13103</a>
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  tink 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=13103">Visual formatting
+  of content inside the pre element isn't available to assistive technologies </a>
+  </td>
+  <td>
+  6/30/2011
+  </td>
+  <td>
+  5/12/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=13550">13550</a>
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  cyns 
+  </td>
+  <td>
+  REOP 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=13550">type table in
+  4.10.7 should indicate control type changes based on list attribute </a>
+  </td>
+  <td>
+  8/3/2011
+  </td>
+  <td>
+  6/25/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=13553">13553</a>
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  cyns 
+  </td>
+  <td>
+  REOP 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=13553">4.10.6 confusing,
+  seemlingly contradictory text </a>
+  </td>
+  <td>
+  8/3/2011
+  </td>
+  <td>
+  5/28/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=14689">14689</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  ht 
+  </td>
+  <td>
+  REOP 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=14689">xml-stylesheet
+  with type=text/xsl needs to be handled explicitly </a>
+  </td>
+  <td>
+  11/3/2011
+  </td>
+  <td>
+  3/22/2013
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td>
+  Defining existing behavior,
+  need to make sure this doesn't turn into a feature
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=15948">15948</a>
+  </td>
+  <td>
+  bibliophiliamaniac 
+  </td>
+  <td>
+  xn--mlform-iua 
+  </td>
+  <td>
+  REOP 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=15948">&lt;area&gt;
+  should be classified as &quot;interactive content&quot; </a>
+  </td>
+  <td>
+  2/10/2012
+  </td>
+  <td>
+  2/4/2015
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=16783">16783</a>
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=16783">no clear
+  information on expected or desirable keyboard/focus interaction behaviour
+  with new dialog element </a>
+  </td>
+  <td>
+  4/18/2012
+  </td>
+  <td>
+  2/18/2013
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=16959">16959</a>
+  </td>
+  <td>
+  travil 
+  </td>
+  <td>
+  addison 
+  </td>
+  <td>
+  ASSI 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=16959">i18n-ISSUE-88:
+  local/floating date terminology </a>
+  </td>
+  <td>
+  5/7/2012
+  </td>
+  <td>
+  4/8/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=16960">16960</a>
+  </td>
+  <td>
+  travil 
+  </td>
+  <td>
+  addison 
+  </td>
+  <td>
+  ASSI 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=16960">i18n-ISSUE-89:
+  Time zones and local dates and times </a>
+  </td>
+  <td>
+  5/7/2012
+  </td>
+  <td>
+  8/22/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td>
+  Though it sounds like this
+  has already been done
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=16979">16979</a>
+  </td>
+  <td>
+  robin 
+  </td>
+  <td>
+  addison 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=16979">i18n-ISSUE-119:
+  provide example of language detection fallback </a>
+  </td>
+  <td>
+  5/7/2012
+  </td>
+  <td>
+  9/14/2012
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=17488">17488</a>
+  </td>
+  <td>
+  robin 
+  </td>
+  <td>
+  annevk 
+  </td>
+  <td>
+  REOP 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=17488">Define capture
+  attribute </a>
+  </td>
+  <td>
+  6/14/2012
+  </td>
+  <td>
+  1/21/2013
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td>
+  Need to make sure defined
+  as what is currently out there in UAs
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=18279">18279</a>
+  </td>
+  <td>
+  robin 
+  </td>
+  <td>
+  contributor 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=18279">Specification
+  should be clearer about when the downloading of the application cache starts.
+  &quot;These events are delayed until after the load event has fired.&quot; is
+  a bit misleading. The chrome developer team interprets it as: Start
+  downloading all resources f </a>
+  </td>
+  <td>
+  7/18/2012
+  </td>
+  <td>
+  9/16/2013
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=18508">18508</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  paul 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=18508">Media-type
+  registrations should include clipboard flavor names </a>
+  </td>
+  <td>
+  8/9/2012
+  </td>
+  <td>
+  6/11/2013
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=20793">20793</a>
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  res-html 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=20793">Is 'aside'
+  related to the nearest ancestor sectioning content? </a>
+  </td>
+  <td>
+  1/28/2013
+  </td>
+  <td>
+  5/12/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=20804">20804</a>
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  ian 
+  </td>
+  <td>
+  ASSI 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=20804">The description
+  for the menu element is confusing </a>
+  </td>
+  <td>
+  1/29/2013
+  </td>
+  <td>
+  7/15/2013
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=20987">20987</a>
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  ian 
+  </td>
+  <td>
+  ASSI 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=20987">The main element
+  could do with some more examples </a>
+  </td>
+  <td>
+  2/13/2013
+  </td>
+  <td>
+  11/12/2013
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=21265">21265</a>
+  </td>
+  <td>
+  robin 
+  </td>
+  <td>
+  alexander.farkas 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=21265">Be more
+  strict/clear for 'explicit commit action' for the change event </a>
+  </td>
+  <td>
+  3/13/2013
+  </td>
+  <td>
+  4/12/2013
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=21807">21807</a>
+  </td>
+  <td>
+  robin 
+  </td>
+  <td>
+  robin 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=21807">Shepherd Ruby
+  Extension Spec to FPWD </a>
+  </td>
+  <td>
+  4/23/2013
+  </td>
+  <td>
+  4/23/2013
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=21912">21912</a>
+  </td>
+  <td>
+  robin 
+  </td>
+  <td>
+  simonp 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=21912">form method
+  should support 'dialog' </a>
+  </td>
+  <td>
+  5/2/2013
+  </td>
+  <td>
+  6/11/2013
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=22049">22049</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  eoconnor 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=22049">Describing cell
+  for an header cell in a data table </a>
+  </td>
+  <td>
+  5/15/2013
+  </td>
+  <td>
+  2/16/2015
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=22074">22074</a>
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=22074">modify advice on
+  use of figcaption to caption table. </a>
+  </td>
+  <td>
+  5/17/2013
+  </td>
+  <td>
+  5/17/2013
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=22195">22195</a>
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=22195">&quot;script
+  element: No role&quot; — it strikes me that &lt;head&gt;, &lt;style&gt;,
+  &lt;script&gt;, &lt;noscript&gt; when scripting is enabled, etc, should
+  probably have aria-hidden=true implied and forced (strong semantic). </a>
+  </td>
+  <td>
+  5/29/2013
+  </td>
+  <td>
+  1/12/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=22368">22368</a>
+  </td>
+  <td>
+  silviapfeiffer1 
+  </td>
+  <td>
+  pal 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=22368">Leftover WebVTT
+  normative provisions. </a>
+  </td>
+  <td>
+  6/14/2013
+  </td>
+  <td>
+  6/15/2013
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=22378">22378</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  tink 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=22378">Grammatical error
+  in 4.4.1 </a>
+  </td>
+  <td>
+  6/15/2013
+  </td>
+  <td>
+  2/16/2015
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=22576">22576</a>
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  david100 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=22576">ALT for an image
+  if text link where the image has more than 3 or 4 words. </a>
+  </td>
+  <td>
+  7/4/2013
+  </td>
+  <td>
+  7/4/2013
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=22777">22777</a>
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  tink 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=22777">4.8.1.1.7 Include
+  longdesc example </a>
+  </td>
+  <td>
+  7/23/2013
+  </td>
+  <td>
+  7/24/2013
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=22852">22852</a>
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  david100 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=22852">Average rainfall
+  description consider reference in the ALT text to the full description </a>
+  </td>
+  <td>
+  8/1/2013
+  </td>
+  <td>
+  1/12/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=22853">22853</a>
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  david100 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=22853">Little confused
+  by example &quot;4.8.1.1.16&quot; </a>
+  </td>
+  <td>
+  8/1/2013
+  </td>
+  <td>
+  11/12/2013
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=22854">22854</a>
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  david100 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=22854">&quot;4.8.1.1.17&quot;
+  Logos, including the word &quot;logo&quot; in ALT </a>
+  </td>
+  <td>
+  8/1/2013
+  </td>
+  <td>
+  1/13/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23086">23086</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  harald 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23086">&lt;video&gt;
+  action on what to display needs better OR flags </a>
+  </td>
+  <td>
+  8/28/2013
+  </td>
+  <td>
+  8/28/2013
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23113">23113</a>
+  </td>
+  <td>
+  silviapfeiffer1 
+  </td>
+  <td>
+  silviapfeiffer1 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23113">Deal with mode
+  for TextTrackCues that are not VTTCues </a>
+  </td>
+  <td>
+  8/31/2013
+  </td>
+  <td>
+  9/17/2013
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23139">23139</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  j.kewley 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23139">MD5 is only
+  message digest algorithm mentioned for keygen field </a>
+  </td>
+  <td>
+  9/3/2013
+  </td>
+  <td>
+  9/3/2013
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23152">23152</a>
+  </td>
+  <td>
+  robin 
+  </td>
+  <td>
+  xn--mlform-iua 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23152">Call out that
+  content model: Text, in HTML, depends on the kind of element </a>
+  </td>
+  <td>
+  9/4/2013
+  </td>
+  <td>
+  1/13/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23323">23323</a>
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23323">consider pointing
+  to API guide for mappings </a>
+  </td>
+  <td>
+  9/22/2013
+  </td>
+  <td>
+  9/22/2013
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23347">23347</a>
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  jcraig 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23347">Element.tabIndex
+  default on non-natively-focusable elements should be undefined rather than -1
+  </a>
+  </td>
+  <td>
+  9/24/2013
+  </td>
+  <td>
+  9/25/2013
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23381">23381</a>
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  surkov.alexander 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23381">dialog part of
+  inert subtrees section is not clear </a>
+  </td>
+  <td>
+  9/27/2013
+  </td>
+  <td>
+  10/7/2013
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23388">23388</a>
+  </td>
+  <td>
+  robin 
+  </td>
+  <td>
+  scunliffe.bugzilla 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23388">Item #4 of the
+  DOM Window Named Item should not allow nor endorse conflation of the name and
+  id namespaces </a>
+  </td>
+  <td>
+  9/28/2013
+  </td>
+  <td>
+  9/28/2013
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23389">23389</a>
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  scunliffe.bugzilla 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23389">The
+  implementation symantics of the HTML hidden=&quot;hidden&quot; attribute vs
+  CSS display:none are not clear and in fact conflict </a>
+  </td>
+  <td>
+  9/28/2013
+  </td>
+  <td>
+  10/2/2013
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td>
+  Might be browser issue
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23407">23407</a>
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23407">provide code
+  example and best practice advice for dialog </a>
+  </td>
+  <td>
+  10/1/2013
+  </td>
+  <td>
+  10/1/2013
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23521">23521</a>
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  stommepoes 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23521">Example code
+  issues for section element </a>
+  </td>
+  <td>
+  10/15/2013
+  </td>
+  <td>
+  11/12/2013
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23524">23524</a>
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  RYAN.P.MCGINTY 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23524">Incorrect
+  Headings in Example </a>
+  </td>
+  <td>
+  10/15/2013
+  </td>
+  <td>
+  10/16/2013
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23585">23585</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  jcraig 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23585">FKA: when
+  document.activeElement is hidden, it retains its status as
+  document.activeElement, and therefore intercepts keyboard events as the event
+  target </a>
+  </td>
+  <td>
+  10/21/2013
+  </td>
+  <td>
+  11/20/2013
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23608">23608</a>
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  taken.spc 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23608">Inconsistency
+  between &quot;placeholder&quot; attribute and &quot;placeholder label
+  option&quot; </a>
+  </td>
+  <td>
+  10/23/2013
+  </td>
+  <td>
+  1/12/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23626">23626</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  xn--mlform-iua 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23626">@lang/xml:lang:
+  The spec writes the same paragraph twice: </a>
+  </td>
+  <td>
+  10/25/2013
+  </td>
+  <td>
+  10/25/2013
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23722">23722</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  mrforsythexeter 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23722">rowspan colspan
+  attribute </a>
+  </td>
+  <td>
+  11/5/2013
+  </td>
+  <td>
+  1/21/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23883">23883</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  giuseppep 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23883">Broken hyperlink
+  in texttrack interface </a>
+  </td>
+  <td>
+  11/21/2013
+  </td>
+  <td>
+  11/21/2013
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23939">23939</a>
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23939">add advice to AT
+  UA about presentation of &lt;img&gt; no alt </a>
+  </td>
+  <td>
+  11/28/2013
+  </td>
+  <td>
+  12/4/2013
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24166">24166</a>
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  jfgames85 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24166">error in
+  description about a element </a>
+  </td>
+  <td>
+  12/26/2013
+  </td>
+  <td>
+  1/12/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24186">24186</a>
+  </td>
+  <td>
+  robin 
+  </td>
+  <td>
+  glenn 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24186">References
+  undefined type HTMLPropertiesCollection </a>
+  </td>
+  <td>
+  1/2/2014
+  </td>
+  <td>
+  1/2/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24275">24275</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  vic99999 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24275">Application cache
+  vs HTTP Expires </a>
+  </td>
+  <td>
+  1/13/2014
+  </td>
+  <td>
+  1/13/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24281">24281</a>
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  edward.bryant 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24281">Use of
+  &lt;cite&gt; with abbreviated citation forms </a>
+  </td>
+  <td>
+  1/13/2014
+  </td>
+  <td>
+  6/7/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24311">24311</a>
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  david100 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24311">figcaption does
+  not currently replace alt </a>
+  </td>
+  <td>
+  1/16/2014
+  </td>
+  <td>
+  1/22/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24395">24395</a>
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24395">add advisory text
+  about use of p for subheading </a>
+  </td>
+  <td>
+  1/25/2014
+  </td>
+  <td>
+  2/16/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24447">24447</a>
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24447">make
+  recommendation not to use tables for layout more explicit and expand issue(s)
+  explanation </a>
+  </td>
+  <td>
+  1/30/2014
+  </td>
+  <td>
+  1/30/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24589">24589</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  oswald.vanginkel 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24589">The absense of
+  other input elements in the example incorrectly gives Mozilla developers the
+  idea that even if there were other inputs in this form and it is submitted
+  via the image type input that they should not be submitted. </a>
+  </td>
+  <td>
+  2/9/2014
+  </td>
+  <td>
+  2/9/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24671">24671</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  ryanboehning 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24671">Elements Index
+  missing &lt;svg&gt; and &lt;math&gt; tags </a>
+  </td>
+  <td>
+  2/14/2014
+  </td>
+  <td>
+  2/14/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24680">24680</a>
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  pawel.benetkiewicz 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24680">hgroup obsolete
+  and non-conforming element still exists in certain paragraphs </a>
+  </td>
+  <td>
+  2/15/2014
+  </td>
+  <td>
+  2/16/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24685">24685</a>
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24685">unsure this
+  advice is good </a>
+  </td>
+  <td>
+  2/16/2014
+  </td>
+  <td>
+  2/16/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24839">24839</a>
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24839">clarify that
+  heading in section can be a descendant of non sectioning elements such as
+  header/div </a>
+  </td>
+  <td>
+  2/27/2014
+  </td>
+  <td>
+  2/27/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24860">24860</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  hbbtvjon 
+  </td>
+  <td>
+  REOP 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24860">When can user
+  agents honor the user preferences for automatic text track selection </a>
+  </td>
+  <td>
+  2/28/2014
+  </td>
+  <td>
+  5/12/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=25154">25154</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  mesch 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=25154">omit useless
+  phrase </a>
+  </td>
+  <td>
+  3/26/2014
+  </td>
+  <td>
+  3/26/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=25232">25232</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  xn--mlform-iua 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=25232">De-emphasis
+  DOCTYPE: shift focus from ”required preamble” to ”required rendering mode” </a>
+  </td>
+  <td>
+  4/2/2014
+  </td>
+  <td>
+  4/2/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=25233">25233</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  xn--mlform-iua 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=25233">Specify that
+  &quot;Optionally, a DOCTYPE” means that quirky doctypes must be ignored </a>
+  </td>
+  <td>
+  4/2/2014
+  </td>
+  <td>
+  4/2/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=25259">25259</a>
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  res-html 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=25259">Conversations:
+  recommend to use 'cite' instead of 'span'/'b' </a>
+  </td>
+  <td>
+  4/4/2014
+  </td>
+  <td>
+  4/4/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=25260">25260</a>
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  jack_action100 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=25260">sentence written
+  twice </a>
+  </td>
+  <td>
+  4/4/2014
+  </td>
+  <td>
+  4/4/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=25270">25270</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  qurnelius 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=25270">Conflicting
+  suggestions about explicit sectioning </a>
+  </td>
+  <td>
+  4/5/2014
+  </td>
+  <td>
+  4/5/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=25393">25393</a>
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=25393">outline depth
+  calculation should not include empty sections </a>
+  </td>
+  <td>
+  4/19/2014
+  </td>
+  <td>
+  4/23/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=25398">25398</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  mark.rogers 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=25398">REV attribute
+  marked as obsolete in HTML 5 CR, but allowed by RDFa REC </a>
+  </td>
+  <td>
+  4/21/2014
+  </td>
+  <td>
+  6/5/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=25427">25427</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  hbbtvjon 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=25427">Video element
+  playback position and live content </a>
+  </td>
+  <td>
+  4/23/2014
+  </td>
+  <td>
+  6/22/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=25501">25501</a>
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  kgroves 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=25501">3.2.4.1 missing
+  discussion of 'empty' content model </a>
+  </td>
+  <td>
+  4/29/2014
+  </td>
+  <td>
+  5/2/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=25754">25754</a>
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=25754">add section
+  advice on headings to article element </a>
+  </td>
+  <td>
+  5/17/2014
+  </td>
+  <td>
+  5/28/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=25858">25858</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=25858">Consider adding a
+  screen capture example </a>
+  </td>
+  <td>
+  5/21/2014
+  </td>
+  <td>
+  5/21/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=25861">25861</a>
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=25861">[editorial] s
+  element missing aria/tag info </a>
+  </td>
+  <td>
+  5/22/2014
+  </td>
+  <td>
+  5/22/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=25881">25881</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=25881">should similar
+  advice around use of sectioning content in lists be added? </a>
+  </td>
+  <td>
+  5/25/2014
+  </td>
+  <td>
+  5/28/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=25883">25883</a>
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=25883">fix the example
+  use of article so it doesn't have many headless sections </a>
+  </td>
+  <td>
+  5/25/2014
+  </td>
+  <td>
+  5/28/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=25982">25982</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=25982">[editorial] add
+  attribute info to body element </a>
+  </td>
+  <td>
+  6/4/2014
+  </td>
+  <td>
+  6/4/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26059">26059</a>
+  </td>
+  <td>
+  robin 
+  </td>
+  <td>
+  laura.lee.carlson 
+  </td>
+  <td>
+  REOP 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26059">Please list
+  longdesc in the table of HTML5 attributes and link to its spec </a>
+  </td>
+  <td>
+  6/11/2014
+  </td>
+  <td>
+  17:02:38
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26177">26177</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  erikcharlebois 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26177">Typo in HTML 5.1
+  dialog anchor-point spec </a>
+  </td>
+  <td>
+  6/23/2014
+  </td>
+  <td>
+  6/23/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26397">26397</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  david 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26397">&lt;picture&gt;/&lt;img&gt;
+  acknowledgements </a>
+  </td>
+  <td>
+  7/21/2014
+  </td>
+  <td>
+  7/22/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26400">26400</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  plh 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26400">&quot;Parsed
+  URL&quot; isn't defined in URL </a>
+  </td>
+  <td>
+  7/21/2014
+  </td>
+  <td>
+  7/22/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26531">26531</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  mike 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26531">include rev in
+  the list of obsolete attributes in the spec </a>
+  </td>
+  <td>
+  8/6/2014
+  </td>
+  <td>
+  8/6/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26684">26684</a>
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26684">change aria refs
+  to point to aria 1.1 </a>
+  </td>
+  <td>
+  8/28/2014
+  </td>
+  <td>
+  8/28/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26686">26686</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  sdwood.76 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26686">Dropzone
+  operation and effectAllowed </a>
+  </td>
+  <td>
+  8/28/2014
+  </td>
+  <td>
+  8/28/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26697">26697</a>
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  evan.teran 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26697">Typo: Missing
+  ampersand in section 4.7.5.1.4 </a>
+  </td>
+  <td>
+  8/30/2014
+  </td>
+  <td>
+  8/30/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26754">26754</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  plh 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26754">mutation
+  observers should be linked to </a>
+  </td>
+  <td>
+  9/8/2014
+  </td>
+  <td>
+  9/8/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26857">26857</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  simonp 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26857">longdesc on
+  iframe should be listed as obsolete </a>
+  </td>
+  <td>
+  9/19/2014
+  </td>
+  <td>
+  9/19/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26880">26880</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  stefan 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26880">HTML5 vs HTML 5 </a>
+  </td>
+  <td>
+  9/22/2014
+  </td>
+  <td>
+  11/3/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26940">26940</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  stefan 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26940">1.3 Scope, last
+  paragraph, hardware configuration software </a>
+  </td>
+  <td>
+  9/30/2014
+  </td>
+  <td>
+  9/30/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26956">26956</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  memmie 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26956">autocompletion=off
+  shouldn't be used to protect sensitive data </a>
+  </td>
+  <td>
+  10/2/2014
+  </td>
+  <td>
+  10/2/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26972">26972</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  stefan 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26972">Make a sentence
+  easier to understand </a>
+  </td>
+  <td>
+  10/4/2014
+  </td>
+  <td>
+  10/4/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26978">26978</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  stefan 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26978">1.8, paragraph 7,
+  more or less </a>
+  </td>
+  <td>
+  10/6/2014
+  </td>
+  <td>
+  10/6/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26982">26982</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  stefan 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26982">1.9.1 , list
+  before CSRF, first item </a>
+  </td>
+  <td>
+  10/6/2014
+  </td>
+  <td>
+  10/6/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26987">26987</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  stefan 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26987">1.10.1, in first
+  dd </a>
+  </td>
+  <td>
+  10/6/2014
+  </td>
+  <td>
+  10/6/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26989">26989</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  stefan 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26989">1.10.1, second
+  paragraph after dl </a>
+  </td>
+  <td>
+  10/6/2014
+  </td>
+  <td>
+  10/7/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26990">26990</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  stefan 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26990">1.10.2 Syntax
+  Errors, Errors with optional error recovery </a>
+  </td>
+  <td>
+  10/7/2014
+  </td>
+  <td>
+  10/7/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27004">27004</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  stefan 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27004">1.10.2, last code
+  example </a>
+  </td>
+  <td>
+  10/9/2014
+  </td>
+  <td>
+  10/9/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27117">27117</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  ififuyilel 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27117">2nd and 3rd
+  example are duplicates </a>
+  </td>
+  <td>
+  10/20/2014
+  </td>
+  <td>
+  10/20/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27120">27120</a>
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  heydon 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27120">Advice unclear on
+  role of separator and lists </a>
+  </td>
+  <td>
+  10/21/2014
+  </td>
+  <td>
+  12/11/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27121">27121</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27121">add warning about
+  title attribute use </a>
+  </td>
+  <td>
+  10/21/2014
+  </td>
+  <td>
+  10/21/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27172">27172</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  Robert.Siemer-w3.org 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27172">The referred
+  third snippet is exactly the same as the second. That doesn’t look intended. </a>
+  </td>
+  <td>
+  10/25/2014
+  </td>
+  <td>
+  10/25/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27192">27192</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27192">some HTML WG
+  members missing from HTML5 REC acknowledgements </a>
+  </td>
+  <td>
+  10/30/2014
+  </td>
+  <td>
+  2/17/2015
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27229">27229</a>
+  </td>
+  <td>
+  robin 
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27229">HTML5 REC
+  inputmode mentioned </a>
+  </td>
+  <td>
+  11/4/2014
+  </td>
+  <td>
+  11/4/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27230">27230</a>
+  </td>
+  <td>
+  robin 
+  </td>
+  <td>
+  master.skywalker.88 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27230">HTML5 REC
+  sortable mentioned </a>
+  </td>
+  <td>
+  11/4/2014
+  </td>
+  <td>
+  11/4/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27290">27290</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  stefan 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27290">1.10.2, last
+  example, grammar </a>
+  </td>
+  <td>
+  11/10/2014
+  </td>
+  <td>
+  11/10/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27357">27357</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  maciekpaprocki 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27357">Non consistent
+  code. uppercase in some examples. </a>
+  </td>
+  <td>
+  11/18/2014
+  </td>
+  <td>
+  11/18/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27362">27362</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  stefan 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27362">REC HTML5, Typo,
+  section 2.1, Terminology </a>
+  </td>
+  <td>
+  11/19/2014
+  </td>
+  <td>
+  11/19/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27365">27365</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  stefan 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27365">REC HTML5, Tense,
+  section 2.1, Terminology </a>
+  </td>
+  <td>
+  11/19/2014
+  </td>
+  <td>
+  11/19/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27370">27370</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  b.lund 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27370">Add explanation
+  for generating references to defined Keywords that can be used as URNs </a>
+  </td>
+  <td>
+  11/19/2014
+  </td>
+  <td>
+  12/1/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27385">27385</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  stefan 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27385">REC HTML5,
+  section 2.1.5, Plugins, description confusing </a>
+  </td>
+  <td>
+  11/21/2014
+  </td>
+  <td>
+  11/21/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27393">27393</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  steve 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27393">Term should be
+  defined with a hyperlink </a>
+  </td>
+  <td>
+  11/21/2014
+  </td>
+  <td>
+  11/24/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27407">27407</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  stefan 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27407">REC HTML5,
+  section 2.1.5, Plugins, in the warning. clarification </a>
+  </td>
+  <td>
+  11/22/2014
+  </td>
+  <td>
+  11/22/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27423">27423</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  stefan 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27423">REC HTML5,
+  section 2.2.1, sentence restructured </a>
+  </td>
+  <td>
+  11/25/2014
+  </td>
+  <td>
+  11/25/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27594">27594</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  robo 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27594">Initial value in
+  an example is 50 (not 60) </a>
+  </td>
+  <td>
+  12/12/2014
+  </td>
+  <td>
+  12/12/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27628">27628</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  mholmes 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27628">Confusing case
+  inconsistency in sample document </a>
+  </td>
+  <td>
+  12/16/2014
+  </td>
+  <td>
+  12/16/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27629">27629</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27629">typo in
+  breadcrumb advice </a>
+  </td>
+  <td>
+  12/16/2014
+  </td>
+  <td>
+  12/16/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27654">27654</a>
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  chaals 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27654">Algorithm for
+  selecting accesskey should mention user requirements </a>
+  </td>
+  <td>
+  12/18/2014
+  </td>
+  <td>
+  12/18/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27966">27966</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  arlen.walker 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27966">Bad Grammar </a>
+  </td>
+  <td>
+  2/5/2015
+  </td>
+  <td>
+  2/5/2015
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27967">27967</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  arlen.walker 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27967">violation of
+  custom </a>
+  </td>
+  <td>
+  2/5/2015
+  </td>
+  <td>
+  2/5/2015
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=28044">28044</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  patrick.boguet 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=28044">Bug with
+  &quot;linked&quot; datetime-local inputs min value </a>
+  </td>
+  <td>
+  2/18/2015
+  </td>
+  <td>
+  2/18/2015
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td>
+  I think this just needs a
+  simple note explanation
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=28655">28655</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  essam.k 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=28655">Navigation
+  Algorithm Ambiguity </a>
+  </td>
+  <td>
+  5/18/2015
+  </td>
+  <td>
+  5/18/2015
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=28779">28779</a>
+  </td>
+  <td>
+  dave.null
+  </td>
+  <td>
+  Nick_Levinson
+  </td>
+  <td>
+  NEW
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=28779">http-equiv
+  Refresh relative URL's leading slash</a>
+  </td>
+  <td>
+  Mon 04:54
+  </td>
+  <td>
+  Mon 17:14
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=28743">28743</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  jason 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=28743">Sectioning
+  content defines scope of headers as well as headings and footers </a>
+  </td>
+  <td>
+  Wed 06:14
+  </td>
+  <td>
+  Wed 06:14
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=14363">14363</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  contributor 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=14363">Update the
+  registration mechanisms </a>
+  </td>
+  <td>
+  10/3/2011
+  </td>
+  <td>
+  2/13/2013
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P3
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=16186">16186</a>
+  </td>
+  <td>
+  eoconnor 
+  </td>
+  <td>
+  jcraig 
+  </td>
+  <td>
+  REOP 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=16186">HTML 5 missing
+  explicit directives for support full keyboard access (FKA) when navigating to
+  a fragment identifier </a>
+  </td>
+  <td>
+  3/1/2012
+  </td>
+  <td>
+  12/18/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P3
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=16978">16978</a>
+  </td>
+  <td>
+  robin 
+  </td>
+  <td>
+  addison 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=16978">i18n-ISSUE-118:
+  explicitly undefined language </a>
+  </td>
+  <td>
+  5/7/2012
+  </td>
+  <td>
+  9/14/2012
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P3
+  </td>
+  <td>
+  see bug 17864
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=17684">17684</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  theimp 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=17684">Wiki
+  documentation of Pragma directive requirements are unworkable as currently
+  written </a>
+  </td>
+  <td>
+  7/3/2012
+  </td>
+  <td>
+  1/21/2013
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P3
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=17725">17725</a>
+  </td>
+  <td>
+  robin 
+  </td>
+  <td>
+  julian.reschke 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=17725">refactor
+  definition of media type &quot;www-form-urlencoded-encoding&quot; </a>
+  </td>
+  <td>
+  7/9/2012
+  </td>
+  <td>
+  9/14/2012
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P3
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=18052">18052</a>
+  </td>
+  <td>
+  robin 
+  </td>
+  <td>
+  contributor 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=18052">A definition of
+  &quot;palpable&quot; should be added. As it stands, one must infer the
+  meaning of &quot;palpable&quot; through the list of elements. </a>
+  </td>
+  <td>
+  7/18/2012
+  </td>
+  <td>
+  10/2/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P3
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=18365">18365</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  julian.reschke 
+  </td>
+  <td>
+  REOP 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=18365">register about
+  URIs defined by HTML5 </a>
+  </td>
+  <td>
+  7/23/2012
+  </td>
+  <td>
+  2/8/2013
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P3
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=20861">20861</a>
+  </td>
+  <td>
+  robin 
+  </td>
+  <td>
+  robin 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=20861">Should
+  &lt;keygen&gt; be conforming-but-obsolete </a>
+  </td>
+  <td>
+  2/4/2013
+  </td>
+  <td>
+  2/19/2013
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P3
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=20993">20993</a>
+  </td>
+  <td>
+  robin 
+  </td>
+  <td>
+  xn--mlform-iua 
+  </td>
+  <td>
+  REOP 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=20993">To facilitate
+  migration, &lt;!DOCTYPE html&gt; should be recommended for the XHTML5 syntax.
+  </a>
+  </td>
+  <td>
+  2/14/2013
+  </td>
+  <td>
+  3/22/2013
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P3
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=21207">21207</a>
+  </td>
+  <td>
+  robin 
+  </td>
+  <td>
+  davidfstr+w3cbugs 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=21207">X-UA-Compatible
+  should be recognized for &lt;meta http-equiv=...&gt; </a>
+  </td>
+  <td>
+  3/7/2013
+  </td>
+  <td>
+  3/27/2013
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P3
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=21926">21926</a>
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  res-html 
+  </td>
+  <td>
+  ASSI 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=21926">Use div instead
+  of span in subheading example for album title </a>
+  </td>
+  <td>
+  5/4/2013
+  </td>
+  <td>
+  1/12/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P3
+  </td>
+  <td>
+  Already fixed
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=22050">22050</a>
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  eoconnor 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=22050">document
+  outlining issues </a>
+  </td>
+  <td>
+  5/15/2013
+  </td>
+  <td>
+  5/12/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P3
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=22875">22875</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  fabio.vergani.pec 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=22875">db error </a>
+  </td>
+  <td>
+  8/4/2013
+  </td>
+  <td>
+  9/3/2013
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P3
+  </td>
+  <td>
+  Need more info
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24276">24276</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  vic99999 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24276">Application cache
+  vs HTTP Expires </a>
+  </td>
+  <td>
+  1/13/2014
+  </td>
+  <td>
+  1/13/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P3
+  </td>
+  <td>
+  Duplicate
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24752">24752</a>
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  master.skywalker.88 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24752">Inline elements
+  for subheadings </a>
+  </td>
+  <td>
+  2/20/2014
+  </td>
+  <td>
+  2/26/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P3
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24753">24753</a>
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  master.skywalker.88 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24753">Outline models </a>
+  </td>
+  <td>
+  2/20/2014
+  </td>
+  <td>
+  5/12/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P3
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=25965">25965</a>
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  glenda.sims 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=25965">Does a TM
+  (trademark), SM (service mark), (R) (registered trademark) symbol in a
+  company's logo need alt text? </a>
+  </td>
+  <td>
+  6/3/2014
+  </td>
+  <td>
+  6/25/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P3
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27039">27039</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  lmm 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27039">Replace
+  references to RFC 2388 with RFC XXXX based on
+  draft-ietf-appsawg-multipart-form-data-05.txt </a>
+  </td>
+  <td>
+  10/13/2014
+  </td>
+  <td>
+  10/14/2014
+  </td>
+  <td>
+  Editorial
+  </td>
+  <td>
+  P3
+  </td>
+  <td>
+  for now until there is a
+  number assigned to the RFC
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=18154">18154</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  contributor 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=18154">Add 3rd parameter
+  (options) to control the window position and size. (See
+  https://developer.mozilla.org/en/DOM/window.showModalDialog) </a>
+  </td>
+  <td>
+  7/18/2012
+  </td>
+  <td>
+  1/21/2013
+  </td>
+  <td nowrap>
+  Minor new
+  </td>
+  <td>
+  P1
+  </td>
+  <td>
+  Might be interop issues
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=18162">18162</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  contributor 
+  </td>
+  <td>
+  REOP 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=18162">IDN email
+  addresses should be converted to Punycode before validating them </a>
+  </td>
+  <td>
+  7/18/2012
+  </td>
+  <td>
+  1/21/2013
+  </td>
+  <td nowrap>
+  Minor new
+  </td>
+  <td>
+  P1
+  </td>
+  <td>
+  Might be interop issues
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=22022">22022</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  follybeachris 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=22022">RegisterProtocolHandler
+  needs to accept http POST request, if possible </a>
+  </td>
+  <td>
+  5/13/2013
+  </td>
+  <td>
+  2/16/2015
+  </td>
+  <td nowrap>
+  Minor new
+  </td>
+  <td>
+  P1
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24269">24269</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  xn--mlform-iua 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24269">Allow &lt;ul
+  type=&quot;none&quot;&gt; and &lt;ol type=&quot;none&quot;&gt; </a>
+  </td>
+  <td>
+  1/10/2014
+  </td>
+  <td>
+  1/10/2014
+  </td>
+  <td nowrap>
+  Minor new
+  </td>
+  <td>
+  P1
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26188">26188</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  cabanier 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26188">Add support for
+  opaque canvas </a>
+  </td>
+  <td>
+  6/24/2014
+  </td>
+  <td>
+  6/24/2014
+  </td>
+  <td nowrap>
+  Minor new
+  </td>
+  <td>
+  P1
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27020">27020</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  rob 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27020">Sequential focus
+  navigation algorithm should include non-focusable elements </a>
+  </td>
+  <td>
+  10/10/2014
+  </td>
+  <td>
+  10/10/2014
+  </td>
+  <td nowrap>
+  Minor new
+  </td>
+  <td>
+  P1
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=14970">14970</a>
+  </td>
+  <td>
+  silviapfeiffer1 
+  </td>
+  <td>
+  mkanat 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=14970">&lt;video&gt;
+  Expose statistics for tracking playback quality (framerate information) </a>
+  </td>
+  <td>
+  11/28/2011
+  </td>
+  <td>
+  3/11/2013
+  </td>
+  <td nowrap>
+  Minor new
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=15450">15450</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  giorgio.liscio 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=15450">needed method to
+  set &quot;current state&quot; of a form as the &quot;default state&quot; </a>
+  </td>
+  <td>
+  1/7/2012
+  </td>
+  <td>
+  9/24/2013
+  </td>
+  <td nowrap>
+  Minor new
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=16963">16963</a>
+  </td>
+  <td>
+  robin 
+  </td>
+  <td>
+  addison 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=16963">i18n-ISSUE-94:
+  Allowing culturally specific week rules </a>
+  </td>
+  <td>
+  5/7/2012
+  </td>
+  <td>
+  9/27/2012
+  </td>
+  <td nowrap>
+  Minor new
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=16965">16965</a>
+  </td>
+  <td>
+  robin 
+  </td>
+  <td>
+  addison 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=16965">i18n-ISSUE-97:
+  Allowing a page to request a given locale (4.10.7.2 normativity) </a>
+  </td>
+  <td>
+  5/7/2012
+  </td>
+  <td>
+  3/6/2014
+  </td>
+  <td nowrap>
+  Minor new
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=16966">16966</a>
+  </td>
+  <td>
+  robin 
+  </td>
+  <td>
+  addison 
+  </td>
+  <td>
+  REOP 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=16966">i18n-ISSUE-98: 13
+  month calendar support </a>
+  </td>
+  <td>
+  5/7/2012
+  </td>
+  <td>
+  9/14/2012
+  </td>
+  <td nowrap>
+  Minor new
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=16970">16970</a>
+  </td>
+  <td>
+  eoconnor 
+  </td>
+  <td>
+  addison 
+  </td>
+  <td>
+  ASSI 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=16970">i18n-ISSUE-105:
+  compatibility caseless matching </a>
+  </td>
+  <td>
+  5/7/2012
+  </td>
+  <td>
+  3/14/2014
+  </td>
+  <td nowrap>
+  Minor new
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=17210">17210</a>
+  </td>
+  <td>
+  robin 
+  </td>
+  <td>
+  mounir 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=17210">Form elements
+  inside a fieldset with a @form should use it </a>
+  </td>
+  <td>
+  5/27/2012
+  </td>
+  <td>
+  9/14/2012
+  </td>
+  <td nowrap>
+  Minor new
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=17999">17999</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  contributor 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=17999">CSSOM defines
+  algorithms named &quot;create a style sheet&quot; and various other similar
+  ones. These need to be explicitly invoked somehow so that &lt;link
+  rel=stylesheet&gt; elements correctly contribute to document.styleSheets. </a>
+  </td>
+  <td>
+  7/18/2012
+  </td>
+  <td>
+  5/24/2013
+  </td>
+  <td nowrap>
+  Minor new
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=18210">18210</a>
+  </td>
+  <td>
+  robin 
+  </td>
+  <td>
+  contributor 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=18210">Why is this an empty
+  element with attributes label and icon? These two attributes should get
+  deleted and content should be allowed that can be styled. </a>
+  </td>
+  <td>
+  7/18/2012
+  </td>
+  <td>
+  10/3/2014
+  </td>
+  <td nowrap>
+  Minor new
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=18979">18979</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  dalimian 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=18979">provide way to
+  guarantee order of execution for async scripts </a>
+  </td>
+  <td>
+  9/23/2012
+  </td>
+  <td>
+  1/21/2013
+  </td>
+  <td nowrap>
+  Minor new
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=19159">19159</a>
+  </td>
+  <td>
+  eoconnor 
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=19159">allow use of
+  hidden for tab panels </a>
+  </td>
+  <td>
+  10/1/2012
+  </td>
+  <td>
+  11/22/2012
+  </td>
+  <td nowrap>
+  Minor new
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=19899">19899</a>
+  </td>
+  <td>
+  erika.doyle 
+  </td>
+  <td>
+  james 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=19899">Support for Break
+  characters should be reconsidered for Textarea </a>
+  </td>
+  <td>
+  11/7/2012
+  </td>
+  <td>
+  1/7/2013
+  </td>
+  <td nowrap>
+  Minor new
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=21985">21985</a>
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  schwer 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=21985">Add additional
+  elements in the ARIA section that do not have aria host language semantic
+  mappings </a>
+  </td>
+  <td>
+  5/9/2013
+  </td>
+  <td>
+  5/9/2013
+  </td>
+  <td nowrap>
+  Minor new
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=22129">22129</a>
+  </td>
+  <td>
+  eoconnor 
+  </td>
+  <td>
+  felipenmoura 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=22129">Allowing @pattern
+  attribute on &lt;input type=number&gt; </a>
+  </td>
+  <td>
+  5/21/2013
+  </td>
+  <td>
+  3/4/2015
+  </td>
+  <td nowrap>
+  Minor new
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=22737">22737</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  arvind 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=22737">Add link type
+  &quot;prerender&quot; to html5 spec </a>
+  </td>
+  <td>
+  7/19/2013
+  </td>
+  <td>
+  8/19/2013
+  </td>
+  <td nowrap>
+  Minor new
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=22785">22785</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  mthornbu 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=22785">there should be a
+  way to schedule audio/video track selection changes in HTMLMediaElements </a>
+  </td>
+  <td>
+  7/23/2013
+  </td>
+  <td>
+  10/1/2014
+  </td>
+  <td nowrap>
+  Minor new
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=22957">22957</a>
+  </td>
+  <td>
+  robin 
+  </td>
+  <td>
+  giuseppep 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=22957">Activation
+  behavior for &lt;select&gt; </a>
+  </td>
+  <td>
+  8/14/2013
+  </td>
+  <td>
+  9/3/2013
+  </td>
+  <td nowrap>
+  Minor new
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23775">23775</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  cyril.concolato 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23775">Add an srcObject
+  to HTMLMediaElement </a>
+  </td>
+  <td>
+  11/8/2013
+  </td>
+  <td>
+  4/8/2014
+  </td>
+  <td nowrap>
+  Minor new
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23871">23871</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  jcraig 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23871">FKA: Need
+  contextual scoping for tabindex </a>
+  </td>
+  <td>
+  11/20/2013
+  </td>
+  <td>
+  1/10/2015
+  </td>
+  <td nowrap>
+  Minor new
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23881">23881</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  christoph142 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23881">Additional button
+  types </a>
+  </td>
+  <td>
+  11/21/2013
+  </td>
+  <td>
+  11/21/2013
+  </td>
+  <td nowrap>
+  Minor new
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23961">23961</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  ben.bucksch 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23961">inputmode values
+  contain orthogonal aspects </a>
+  </td>
+  <td>
+  12/2/2013
+  </td>
+  <td>
+  12/17/2013
+  </td>
+  <td nowrap>
+  Minor new
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24260">24260</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  travil 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24260">Enable scenario
+  for establishing isolated [auxillery] browsing context </a>
+  </td>
+  <td>
+  1/9/2014
+  </td>
+  <td>
+  1/9/2014
+  </td>
+  <td nowrap>
+  Minor new
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24601">24601</a>
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24601">add
+  tbody/thead/tfoot </a>
+  </td>
+  <td>
+  2/10/2014
+  </td>
+  <td>
+  2/11/2014
+  </td>
+  <td nowrap>
+  Minor new
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24644">24644</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  w3c 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24644">li should provide
+  DOM interface to its value representation </a>
+  </td>
+  <td>
+  2/13/2014
+  </td>
+  <td>
+  3/3/2014
+  </td>
+  <td nowrap>
+  Minor new
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24660">24660</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  denis 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24660">Constraint
+  validation on input type=&quot;email&quot; and punycode conversion </a>
+  </td>
+  <td>
+  2/14/2014
+  </td>
+  <td>
+  2/14/2014
+  </td>
+  <td nowrap>
+  Minor new
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24679">24679</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  xn--mlform-iua 
+  </td>
+  <td>
+  REOP 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24679">Addition and
+  improvements to the table over (non-)layout table heuristics </a>
+  </td>
+  <td>
+  2/15/2014
+  </td>
+  <td>
+  4/23/2014
+  </td>
+  <td nowrap>
+  Minor new
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24731">24731</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  ian 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24731">Re-add the media
+  attribute to the specification </a>
+  </td>
+  <td>
+  2/19/2014
+  </td>
+  <td>
+  2/27/2014
+  </td>
+  <td nowrap>
+  Minor new
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24863">24863</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  hbbtvjon 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24863">Per-track
+  metadata for video and audio tracks </a>
+  </td>
+  <td>
+  2/28/2014
+  </td>
+  <td>
+  3/11/2014
+  </td>
+  <td nowrap>
+  Minor new
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=25320">25320</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  julian.reschke 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=25320">multipart/x-mixed-replace
+  </a>
+  </td>
+  <td>
+  4/11/2014
+  </td>
+  <td>
+  4/11/2014
+  </td>
+  <td nowrap>
+  Minor new
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=25352">25352</a>
+  </td>
+  <td>
+  silviapfeiffer1 
+  </td>
+  <td>
+  eoconnor 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=25352">[meta] Improve
+  DataCue </a>
+  </td>
+  <td>
+  4/15/2014
+  </td>
+  <td>
+  6/1/2014
+  </td>
+  <td nowrap>
+  Minor new
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=25353">25353</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  eoconnor 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=25353">[DataCue] change
+  DOMString? text to any? value </a>
+  </td>
+  <td>
+  4/15/2014
+  </td>
+  <td>
+  6/1/2014
+  </td>
+  <td nowrap>
+  Minor new
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=25554">25554</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  cypher543 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=25554">Require
+  permissions to call control methods of HTMLMediaElement without user
+  interaction </a>
+  </td>
+  <td>
+  5/5/2014
+  </td>
+  <td>
+  5/5/2014
+  </td>
+  <td nowrap>
+  Minor new
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26132">26132</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  sridhar1803 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26132">Add
+  &quot;metered-network-autoplay&quot; attribute to &lt;HTML&gt; tag with
+  values that will help browser to restrict autoplay based on available
+  bandwidth. </a>
+  </td>
+  <td>
+  6/18/2014
+  </td>
+  <td>
+  6/30/2014
+  </td>
+  <td nowrap>
+  Minor new
+  </td>
+  <td>
+  P2
+  </td>
+  <td>
+  I think this should be
+  handled in platformsettings for metered connections
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26933">26933</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26933">Adding
+  role=&quot;region&quot; to list of allowable roles on an &quot;article&quot;,
+  &quot;aside&quot; and &quot;address&quot; elements </a>
+  </td>
+  <td>
+  9/29/2014
+  </td>
+  <td>
+  9/29/2014
+  </td>
+  <td nowrap>
+  Minor new
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27292">27292</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  master.skywalker.88 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27292">&lt;label&gt; element
+  content model </a>
+  </td>
+  <td>
+  11/10/2014
+  </td>
+  <td>
+  11/10/2014
+  </td>
+  <td nowrap>
+  Minor new
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27294">27294</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  jcraig 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27294">DOM needs a way
+  to get element's computed ARIA role and computed label string </a>
+  </td>
+  <td>
+  11/10/2014
+  </td>
+  <td>
+  12/21/2014
+  </td>
+  <td nowrap>
+  Minor new
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27295">27295</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  jcraig 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27295">role and aria-*
+  content attributes should be reflected DOM attributes </a>
+  </td>
+  <td>
+  11/10/2014
+  </td>
+  <td>
+  11/13/2014
+  </td>
+  <td nowrap>
+  Minor new
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27433">27433</a>
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  mark.sadecki+w3c 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27433">role=tabpanel
+  should be allowed on section element </a>
+  </td>
+  <td>
+  11/25/2014
+  </td>
+  <td>
+  11/25/2014
+  </td>
+  <td nowrap>
+  Minor new
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27895">27895</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  netmosfera 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=27895">&lt;input
+  disabledifunchanged&gt; </a>
+  </td>
+  <td>
+  1/26/2015
+  </td>
+  <td>
+  1/26/2015
+  </td>
+  <td nowrap>
+  Minor new
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=28034">28034</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  netmosfera 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=28034">support &lt;input
+  maxbytes=&quot;200&quot;&gt; </a>
+  </td>
+  <td>
+  2/16/2015
+  </td>
+  <td>
+  2/16/2015
+  </td>
+  <td nowrap>
+  Minor new
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=28468">28468</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  obscurity0072 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=28468">Protected
+  Document Exchange spec is broken, suggests only document encryption instead
+  of using signatures (using the Authors Private Key, not the Servers) inside
+  encryption to prevent Content altering </a>
+  </td>
+  <td>
+  4/12/2015
+  </td>
+  <td>
+  4/12/2015
+  </td>
+  <td nowrap>
+  Minor new
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=28736">28736</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  mark 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=28736">Feature Request:
+  Banner Title Element </a>
+  </td>
+  <td>
+  Mon 22:13
+  </td>
+  <td>
+  Mon 22:13
+  </td>
+  <td nowrap>
+  Minor new
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=16166">16166</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  public-i18n-core 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=16166">i18n-ISSUE-138:
+  Make lang and xml:lang synonyms in HTML5 </a>
+  </td>
+  <td>
+  2/29/2012
+  </td>
+  <td>
+  1/21/2013
+  </td>
+  <td nowrap>
+  Minor new
+  </td>
+  <td>
+  P3
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=18069">18069</a>
+  </td>
+  <td>
+  robin 
+  </td>
+  <td>
+  contributor 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=18069">Allow
+  textarea@pattern (input@pattern is specced already so why not) </a>
+  </td>
+  <td>
+  7/18/2012
+  </td>
+  <td>
+  4/23/2013
+  </td>
+  <td nowrap>
+  Minor new
+  </td>
+  <td>
+  P3
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=18089">18089</a>
+  </td>
+  <td>
+  robin 
+  </td>
+  <td>
+  contributor 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=18089">It would be nice
+  to allow zero-padding the displayed number. Maybe even a choice of
+  hexadecimal number besides decimal one. </a>
+  </td>
+  <td>
+  7/18/2012
+  </td>
+  <td>
+  9/14/2012
+  </td>
+  <td nowrap>
+  Minor new
+  </td>
+  <td>
+  P3
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=18385">18385</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  devarshipant 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=18385">Programmatic
+  association of a page element to a 'description' text in a different uri </a>
+  </td>
+  <td>
+  7/24/2012
+  </td>
+  <td>
+  1/21/2013
+  </td>
+  <td nowrap>
+  Minor new
+  </td>
+  <td>
+  P3
+  </td>
+  <td>
+  Mostly covered by support
+  longdesc
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=18988">18988</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  Dave.Sparks 
+  </td>
+  <td>
+  REOP 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=18988">Allow explicit
+  grouping of &lt;dt&gt; and &lt;dd&gt; elements </a>
+  </td>
+  <td>
+  9/24/2012
+  </td>
+  <td>
+  4/5/2013
+  </td>
+  <td nowrap>
+  Minor new
+  </td>
+  <td>
+  P3
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=19054">19054</a>
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  contributor 
+  </td>
+  <td>
+  REOP 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=19054">The footer
+  element (Sections, Elements of HTML). Request for clarification. Re:
+  Interaction of &lt;blockquote&gt; with the prohibition on nested
+  &lt;footer&gt;s. &quot;When the footer element contains entire sections, they
+  represent appendices, indexes, long colophons, ve </a>
+  </td>
+  <td>
+  9/25/2012
+  </td>
+  <td>
+  7/25/2013
+  </td>
+  <td nowrap>
+  Minor new
+  </td>
+  <td>
+  P3
+  </td>
+  <td>
+  Still needs more info in my
+  opinioin
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=19887">19887</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  amir.aharoni 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=19887">add a
+  &quot;script&quot; or &quot;writing-system&quot; attribute, in addition to
+  &quot;lang&quot; </a>
+  </td>
+  <td>
+  11/7/2012
+  </td>
+  <td>
+  1/21/2013
+  </td>
+  <td nowrap>
+  Minor new
+  </td>
+  <td>
+  P3
+  </td>
+  <td>
+  This can already be handled
+  by CSS variables and BCP47
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=19888">19888</a>
+  </td>
+  <td>
+  robin 
+  </td>
+  <td>
+  amir.aharoni 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=19888">select the
+  default value of &quot;dir&quot; according to &quot;lang&quot; </a>
+  </td>
+  <td>
+  11/7/2012
+  </td>
+  <td>
+  3/11/2013
+  </td>
+  <td nowrap>
+  Minor new
+  </td>
+  <td>
+  P3
+  </td>
+  <td>
+  This could be big web back compat
+  issue
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=21231">21231</a>
+  </td>
+  <td>
+  robin 
+  </td>
+  <td>
+  fredandw 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=21231">License
+  descriptor attribute </a>
+  </td>
+  <td>
+  3/9/2013
+  </td>
+  <td>
+  3/15/2013
+  </td>
+  <td nowrap>
+  Minor new
+  </td>
+  <td>
+  P3
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=22253">22253</a>
+  </td>
+  <td>
+  eoconnor 
+  </td>
+  <td>
+  eoconnor 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=22253">Please spec
+  img.lowsrc IDL attribute </a>
+  </td>
+  <td>
+  6/3/2013
+  </td>
+  <td>
+  6/6/2013
+  </td>
+  <td nowrap>
+  Minor new
+  </td>
+  <td>
+  P3
+  </td>
+  <td>
+  use srcset now
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23057">23057</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  maddyrammohan 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23057">browser loads a
+  default image when the original src is not found or broken </a>
+  </td>
+  <td>
+  8/25/2013
+  </td>
+  <td>
+  9/8/2013
+  </td>
+  <td nowrap>
+  Minor new
+  </td>
+  <td>
+  P3
+  </td>
+  <td>
+  covered by srcset
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23307">23307</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  konstardiy 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23307">When input or
+  select with validation attributes inside a hidden content, it validates
+  anyway </a>
+  </td>
+  <td>
+  9/20/2013
+  </td>
+  <td>
+  9/20/2013
+  </td>
+  <td nowrap>
+  Minor new
+  </td>
+  <td>
+  P3
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23773">23773</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  eric.sun 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23773">Propose to add
+  &quot;imagecanvas&quot; attribute for Canvas Element </a>
+  </td>
+  <td>
+  11/8/2013
+  </td>
+  <td>
+  12/6/2014
+  </td>
+  <td nowrap>
+  Minor new
+  </td>
+  <td>
+  P3
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=12409">12409</a>
+  </td>
+  <td>
+  travil 
+  </td>
+  <td>
+  eoconnor 
+  </td>
+  <td>
+  REOP 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=12409">WF3: Automatic
+  capitalization in input fields </a>
+  </td>
+  <td>
+  4/1/2011
+  </td>
+  <td>
+  3/16/2015
+  </td>
+  <td>
+  Feature
+  </td>
+  <td>
+  P1
+  </td>
+  <td>
+  In iOS
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=20799">20799</a>
+  </td>
+  <td>
+  robin 
+  </td>
+  <td>
+  adrianba 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=20799">launchURI method
+  proposal </a>
+  </td>
+  <td>
+  1/29/2013
+  </td>
+  <td>
+  7/14/2014
+  </td>
+  <td>
+  Feature
+  </td>
+  <td>
+  P1
+  </td>
+  <td>
+  P1 because window.open is
+  out of sync with other browsers
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=13769">13769</a>
+  </td>
+  <td>
+  travil 
+  </td>
+  <td>
+  mtanalin 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=13769">WF3: Add
+  trim=&quot;&quot; attribute to &lt;input type=text/search&gt; that strips
+  leading and trailing whitespace from the value </a>
+  </td>
+  <td>
+  8/12/2011
+  </td>
+  <td>
+  3/8/2013
+  </td>
+  <td>
+  Feature
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=14104">14104</a>
+  </td>
+  <td>
+  silviapfeiffer1 
+  </td>
+  <td>
+  silviapfeiffer1 
+  </td>
+  <td>
+  REOP 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=14104">&lt;track&gt;
+  Live captioning </a>
+  </td>
+  <td>
+  9/11/2011
+  </td>
+  <td>
+  3/1/2015
+  </td>
+  <td>
+  Feature
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=14194">14194</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  w3c 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=14194">Request:
+  specification for script preloading </a>
+  </td>
+  <td>
+  9/17/2011
+  </td>
+  <td>
+  1/21/2013
+  </td>
+  <td>
+  Feature
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=18176">18176</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  contributor 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=18176">Consider making
+  the argument optional for start() and end(). Many tutorials omit the
+  argument, and think it means start of first range for start() and end of last
+  range for end(). Maybe we should just make the API do what people expect. </a>
+  </td>
+  <td>
+  7/18/2012
+  </td>
+  <td>
+  1/21/2013
+  </td>
+  <td>
+  Feature
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=18386">18386</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  duncan.rowden 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=18386">Ad-Insertion
+  support </a>
+  </td>
+  <td>
+  7/24/2012
+  </td>
+  <td>
+  1/21/2013
+  </td>
+  <td>
+  Feature
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=18646">18646</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  addison 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=18646">I18N-ISSUE-92:
+  Provide support for IANA time zone IDs </a>
+  </td>
+  <td>
+  8/21/2012
+  </td>
+  <td>
+  1/21/2013
+  </td>
+  <td>
+  Feature
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=18791">18791</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  duboisp2 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=18791">Reducing data
+  table size based on the row grouping, column grouping combined with the table
+  header cell structure </a>
+  </td>
+  <td>
+  9/6/2012
+  </td>
+  <td>
+  1/21/2013
+  </td>
+  <td>
+  Feature
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=21040">21040</a>
+  </td>
+  <td>
+  robin 
+  </td>
+  <td>
+  robin 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=21040">Double-sided ruby
+  </a>
+  </td>
+  <td>
+  2/18/2013
+  </td>
+  <td>
+  2/26/2013
+  </td>
+  <td>
+  Feature
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=21041">21041</a>
+  </td>
+  <td>
+  robin 
+  </td>
+  <td>
+  robin 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=21041">Inlining ruby </a>
+  </td>
+  <td>
+  2/18/2013
+  </td>
+  <td>
+  2/26/2013
+  </td>
+  <td>
+  Feature
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=21290">21290</a>
+  </td>
+  <td>
+  robin 
+  </td>
+  <td>
+  w3c 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=21290">Notification of
+  change to the UA's preferences </a>
+  </td>
+  <td>
+  3/14/2013
+  </td>
+  <td>
+  7/24/2013
+  </td>
+  <td>
+  Feature
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=21667">21667</a>
+  </td>
+  <td>
+  eoconnor 
+  </td>
+  <td>
+  eoconnor 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=21667">Add support for
+  forced subtitles </a>
+  </td>
+  <td>
+  4/11/2013
+  </td>
+  <td>
+  2/28/2014
+  </td>
+  <td>
+  Feature
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=22931">22931</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  mbenisch 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=22931">Standardize
+  support for equivalents of mozInnerScreenX / Y </a>
+  </td>
+  <td>
+  8/13/2013
+  </td>
+  <td>
+  8/13/2013
+  </td>
+  <td>
+  Feature
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23870">23870</a>
+  </td>
+  <td>
+  faulkner.steve 
+  </td>
+  <td>
+  jcraig 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23870">FKA: No defined
+  way to get keyboard focus into and out of a shadow DOM component </a>
+  </td>
+  <td>
+  11/20/2013
+  </td>
+  <td>
+  1/31/2014
+  </td>
+  <td>
+  Feature
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24369">24369</a>
+  </td>
+  <td>
+  robin 
+  </td>
+  <td>
+  ethantw 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=24369">Reason for ‘ruby
+  base span’ attribute to come back </a>
+  </td>
+  <td>
+  1/22/2014
+  </td>
+  <td>
+  3/31/2014
+  </td>
+  <td>
+  Feature
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26009">26009</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  email 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=26009">Field element for
+  marking up form controls </a>
+  </td>
+  <td>
+  6/7/2014
+  </td>
+  <td>
+  6/10/2014
+  </td>
+  <td>
+  Feature
+  </td>
+  <td>
+  P2
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=16051">16051</a>
+  </td>
+  <td>
+  robin 
+  </td>
+  <td>
+  xaviermd 
+  </td>
+  <td>
+  REOP 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=16051">Triggering
+  contextual error message for inputs </a>
+  </td>
+  <td>
+  2/21/2012
+  </td>
+  <td>
+  10/22/2012
+  </td>
+  <td>
+  Feature
+  </td>
+  <td>
+  P3
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=17456">17456</a>
+  </td>
+  <td>
+  dave.null 
+  </td>
+  <td>
+  contributor 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=17456">Regarding Section
+  &quot;The translate attribute&quot;: If I am writing prose of fiction, and I
+  write a name I don't want the translation mechanism to translate, then I
+  understand I would set the attribute to &quot;no&quot; on that particular
+  word. But. When I write (for exam </a>
+  </td>
+  <td>
+  6/9/2012
+  </td>
+  <td>
+  1/21/2013
+  </td>
+  <td>
+  Feature
+  </td>
+  <td>
+  P3
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=20557">20557</a>
+  </td>
+  <td>
+  robin 
+  </td>
+  <td>
+  dilvie 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=20557">minlength and
+  tooShort </a>
+  </td>
+  <td>
+  1/3/2013
+  </td>
+  <td>
+  6/11/2013
+  </td>
+  <td>
+  Feature
+  </td>
+  <td>
+  P3
+  </td>
+  <td>
+  Already part of HTM5
+  </td>
+ </tr>
+ <tr>
+  <td>
+  <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=22232">22232</a>
+  </td>
+  <td>
+  eoconnor 
+  </td>
+  <td>
+  ian.html 
+  </td>
+  <td>
+  NEW 
+  </td>
+  <td>
+  <a
+  href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=22232">Introduce
+  replacement elements now so that we will be able to replace recycled elements
+  in the future </a>
+  </td>
+  <td>
+  6/1/2013
+  </td>
+  <td>
+  6/5/2013
+  </td>
+  <td>
+  Feature
+  </td>
+  <td>
+  P3
+  </td>
+  <td></td>
+ </tr>
+</table>
+</body>
+</html>
