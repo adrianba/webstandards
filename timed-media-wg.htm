@@ -47,17 +47,16 @@
         </tr>
     </table>
 
+    <div class="goals">
+      <h2 id="goals">Goals</h2>
+
+      <p>The Web is increasingly used to share and consume timed media (including video and audio). The Timed Media Working Group will work on specifications for enhancing these experiences through new mark-up and APIs. Several other working groups (such as the Audio Working Group and the Web Real-Time Communications Working Group are building sophisticated capabilities that need a common basic set of "bedrock" APIs. The Timed Media Working Group will coordinate the requirements from these and other groups and produce specifications to address these needs.</p>
+    </div>
+
     <div class="scope">
       <h2 id="scope">Scope</h2>
 
-      <p>The Timed Media Working Group will...</p>
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-
+      <p>The scope of the Timed Media Working Group covers technologies related to the orchestration and playback of timed media such as video and audio. The Timed Media Working Group deliverables must address issues of <strong>accessibility, device independence, interoperability, mobility, privacy, and security</strong>. Features that aid accessibility such as captions and transcripts are in scope. Functionality to coordinate other interactions with timed events in the media files is in scope.</p>
       
 	  <h3>Success Criteria</h3>
 
@@ -65,50 +64,42 @@
       
 	 <h3>Out of Scope</h3>
 
-   <p>The group will not work on developing codecs or new media formats.</p>
-   <p>The group will not work on audio processing APIs or real-time communication but will liaise with the Audio Working Group and the WebRTC Working Group to ensure lower level capabilities
+   <p>The group will not work on developing codecs, new media formats, or new encryption algorithms.</p>
+   <p>The group will not work on audio processing APIs or real-time communication but will liaise with the Audio Working Group and the Web Real-Time Communications Working Group to ensure lower level capabilities
     created by the Timed Media Working Group are compatible with those groups' goals.</p>
+  </div>
 
-    <div>
-      <h2 id="deliverables">Deliverables</h2>
-      <p>The working group will deliver the following W3C Recommendations:</p>
-      
+    <div class="deliverables">
+        <h2 id="deliverables">Deliverables</h2>
 
-	
-	  <p><span class="toadd">Identify which deliverables are
-	  expected to become Recommendations and
-	  which are expected to become Group Notes.  Identify documents that are
-	  expected to become W3C Recommendations but that are (per the
-	  <a href="/2004/02/05-pp-transition" shape="rect">transition procedure</a>)
-	  not covered by the W3C Patent Policy. Please indicate whether
-	  any specification is likely to be
-	  a <a href="/Guide/pubrules-about#delta" shape="rect">delta
-	  specification</a> intended to become a normative Recommendation.
-	  <strong>Note:</strong> Does this group have CPP documents that
-	  were CR or PR when the group first transitioned to the W3C
-	  Patent Policy (meaning they would still be CPP) but that
-	  the group now plans to publish as a Working Draft? If so,
-	  please contact the W3C Communications Team for instructions.
-	
-	</span>
-	  </p>
-	  
-	  
-	  
-	  <div class="should" id="ig-other-deliverables">
+        <h3 id="rec-track">Recommendation-Track Deliverables</h3>
+        <p>The working group will deliver at least the following W3C Recommendations:</p>
+
+        <dl>
+          <dt><a href="http://www.w3.org/TR/media-source/">Media Source Extensions</a></dt>
+          <dd>A specification that extends HTMLMediaElement to allow JavaScript to generate media streams for playback. Allowing JavaScript to generate streams facilitates a variety of use cases like adaptive streaming and time shifting live streams.</dd>
+          <dt><a href="http://www.w3.org/TR/encrypted-media/">Encrypted Media Extensions</a></dt>
+          <dd>This specification extends HTMLMediaElement providing APIs to control playback of protected content. The API supports use cases ranging from simple clear key decryption to high value video (given an appropriate user agent implementation). License/key exchange is controlled by the application, facilitating the development of robust playback applications supporting a range of content decryption and protection technologies.</dd>
+        </dl>
+
 	    <h3>Other Deliverables</h3>
-	    
-	    <p><span class="toadd">Describe any other deliverables
-	    such as test suites, tools, or reviews of other groups'
-	    deliverables.</span></p>
-	  </div>
-	
+      <p>The Timed Media Working Group may publish other specifications that are within its scope. In particular, the group may produce specifications for the following features:</p>
 
+      <dl>
+        <dt>Transcript</dt>
+        <dd>If the current Transcript proposal gains implementation support and momentum.</dd>
+        <dt>Captioning support</dt>
+        <dd>The group may produce a specification to enhance the timed text and caption support available to HTML5 media elements. At a future date, should the Timed Text Working Group choose to halt work on the WebVTT specification, the Timed Media Working Group may take up this work.</dd>
+        <dt>Inband Track Support</dt>
+        <dd>If the Media Resource In-band Tracks Community Group produces a mature specification with implementation support then the Timed Media Working Group may adopt this work onto the Recommendation Track.</dd>
+        <dt>Low Level Audio and Video support</dt>
+        <dd>The Timed Media Working Group may work on low-level media APIs to support the work of the Audio and Web Real-Time Communications Working Groups.</dd>
+        <dt>Secondary Screen Support</dt>
+        <dd>The Timed Media Working Group may coordinate work on secondary screen playback with the Second Screen Presentation Working Group.</dd>
+      </dl>
+  	
 	
-	
-	
-	  <h3>Milestones</h3>
-	  
+	    <h3 id="milestones">Milestones</h3>
 	    <table class="roadmap" width="80%"><caption>
 		Milestones
 	      </caption>
@@ -158,6 +149,8 @@
       <dd>This group may provide advice about scenarios and requirements for the specifications.</dd>
       <dt><a href="http://www.w3.org/2011/04/webrtc/">Web Real-Time Communications Working Group</a></dt>
       <dd>This group creates API specifications for real time media and is interested in low level audio/video device APIs.</dd>
+      <dt><a href="http://www.w3.org/2014/secondscreen/">Second Screen Presentation Working Group</a></dt>
+      <dd>This group creates API specifications for controlling secondary screens for displaying web coment. The Timed Media Working Group may provide APIs to project media through a secondary screen.</dd>
       <dt><a href="http://www.w3.org/WAI/PF/">WAI Protocols and Formats Working Group</a></dt>
       <dd>To ensure that Timed Media WG deliverables appropriately support accessibility requirements.</dd>
       <dt><a href="http://www.w3.org/International/core/">Internationalization Core Working Group</a></dt>
